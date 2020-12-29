@@ -2,6 +2,8 @@ CACHE MANIFEST
 
 702.js
 app2usb.js
+arabicGuy100.js
+arabicGuy127.js
 arabicGuy132.js
 backup.js
 bg1.png
@@ -29,7 +31,9 @@ int64.js
 jb_c-code.js
 kernelClock.js
 kernelDumper.js
-linux.js
+linux1.js
+linux2.js
+linux3.js
 mira.js
 mira_c-code.js
 mira2.js
