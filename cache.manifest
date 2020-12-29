@@ -8,7 +8,6 @@ arabicGuy132.js
 backup.js
 bg1.png
 binloader.html
-cache.manifest
 dbBackup.js
 dbRestore.js
 disableUpd.js
@@ -31,9 +30,9 @@ int64.js
 jb_c-code.js
 kernelClock.js
 kernelDumper.js
-linux1.js
+Linux1.js
 linux2.js
-linux3.js
+Linux3.js
 mira.js
 mira_c-code.js
 mira2.js
