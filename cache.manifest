@@ -50,3 +50,4 @@ binloader\int64.js
 binloader\ps4.js
 binloader\rop.js
 binloader\userland.js
+binloader\utils.js
