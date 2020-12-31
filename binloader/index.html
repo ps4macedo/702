@@ -1,4 +1,9 @@
 <html>
+<style>
+body{text-align:center;overflow:hidden;color: #49c179; background-image:url(../bg1.png); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
+.button{font-family: arial;font-size:14px;text-transform: uppercase;font-weight:700;border:2px solid #404040;border-radius: 4px;padding:10px;cursor: pointer;display:inline-block; text-decoration:none;background:transparent;color:#49c179;box-shadow:0 5px 0 #878787;}
+input{width:25px;height:25px;background-color: transparent;}
+</style>
 	<head>
 		<title>BinLoader</title>
 		<script src="utils.js"></script>
@@ -6,25 +11,22 @@
 		<script src="rop.js"></script>
 		<script src="userland.js"></script>
 		<script src="ps4.js"></script>
-<style>
-body{text-align:center;overflow:hidden;color: #49c179; background-image:url(bg1.png); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
-.button{font-family: arial;font-size:14px;text-transform: uppercase;font-weight:700;border:2px solid #404040;border-radius: 4px;padding:10px;cursor: pointer;display:inline-block; text-decoration: none;background:transparent;color:#49c179;box-shadow:0 5px 0 #878787;}
-input{width:25px;height:25px;background-color: transparent;}
-</style>
-<body onload="go()">
+	</head>
+	<body onload="go()">
 	<script>
 		if(document.cookie.indexOf('kex=0') >= 0)
 		document.location.href = 'index.html';
 	</script>
-
-	</head>
 	<body onload="go()">
 		<button id="input1" onfocus="handle2()"></button>
 		<button id="input2"></button>
 		<button id="input3" onfocus="handle2()"></button>
 		<select id="select1">
 			<option value="value1">Value1</option>
-		</select><div></div>
-		<script>document.getElementById("select1").style.display = "none";</script>
+		</select>
+		<div></div>
+		<script>
+		document.getElementById("select1").style.display = "none";
+		</script>
 	</body>
 </html>
