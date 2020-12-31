@@ -290,9 +290,9 @@ function stage2() {
       new_thr.fcall(libKernelBase.add32(OFFSET_lk_pthread_exit), 0);
     });
     loader_thr();
-	document.getElementById("msgs").innerHTML = "P R O N T O ! ! ! Sua carga útel já pode ser enviada. \n\nUtilize o ip do console e a porta 9021. \nLink do aplicativo para enviar as cargas úteis:\n https://github.com/ps4macedo/702/raw/main/apps/ps4punch.rar \nLink do WebRTE: http://ps4trainer.com/Trainer/WebRTE_702.bin";
+	document.getElementById("msgs").innerHTML = "<br>P R O N T O ! ! ! Sua carga útel já pode ser enviada. Utilize o ip do console e a porta 9021. <br><br>Link do aplicativo para enviar as cargas úteis:<br> <a href=\"https://github.com/ps4macedo/702/raw/main/apps/ps4punch.rar\" target=\"_blank\"> <font color=\"#6089f6\">https://github.com/ps4macedo/702/raw/main/apps/ps4punch.rar</font></a><br><br>Link do WebRTE: http://ps4trainer.com/Trainer/WebRTE_702.bin";
   
-}
+} 
 
 function stage3() {
 
