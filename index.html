@@ -68,7 +68,6 @@ background-color: transparent;
 <h1 id=msgAuto style='font-size:30px;text-align:center;color:#6089f6;'>Auto HEN 2.1.3 <font color="#ee596f">ATIVADO</font></h1>
 </div>
 <br>
-<!--<div style="text-align:center"><font size="3" color="#6089f6"><b><span id=passCounter></span></b> Sucesso(s)</font>&nbsp;&nbsp;/&nbsp;&nbsp;<font size="3" color="#ee596f"><b><span id=failCounter></span></b> Falha(s)</font></div>-->  
 </div>
 <hr width="47%" size="1" color="#ff5757">
 <script>
@@ -127,18 +126,18 @@ tempC.value=70;
 <button class="button" onclick="clique('usb')" onMouseOut="fora()" ; onmouseover="dicas2('usb');">USB</button>
 <button class="button" onclick="clique('botao')" onMouseOut="fora()" ; onmouseover="dicas2('botao');">Botão</button>
 <button class="button" onclick="clique('memoria')" onMouseOut="fora()" ; onmouseover="dicas2('memoria');">M. cheia</button>
-<button class="button" onclick="clique('kp')" onMouseOut="fora()" ; onmouseover="dicas2('kp');">PK</button>
+<button class="button" onclick="clique('demora')" onMouseOut="fora()" ; onmouseover="dicas2('demora');">Demora</button>
 <button class="button" onclick="clique('6')" onmouseover="dicas2('6');"><font color="#6089f6"><b>Hosts</b></font></button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
 </div>
 <script>
-function clique (dica) {
-switch (dica) {
+function clique (aoclicar) {
+switch (aoclicar) {
 case 'cache':document.getElementById("msgs").innerHTML = "<h1 style='color:#ffffff;font-size:22px;'>Limpeza e atualização da cache: Ao entrar no navegador quando aparecer o fundo branco, imediatamente, segure o circulo até aparecer a tela \"Páginas usadas confrequência\", clique no botão OPTIONS, selecione \"Excluir tudo\",confirme, OPTIONS novamente, selecione \"Histórico de navegação\", clique em OPTIONS, e \"Limpar histórico de navegação\", confirme, volte a \"Páginas usadas com frequência\", mais uma vez OPTIONS, agora selecione \"Configurações\" e \"Excluir cookies\",confirme, depois \"Limpar dados de sites\" e confirme, volte e digite o endereço do host e adicione aos favoritos.";break;
 case 'usb':document.getElementById("msgs").innerHTML = "<font color=\"#ee596f\">Desconecte</font> todos os cabos USB, antes do desbloqueio.";break;
 case 'botao':document.getElementById("msgs").innerHTML = "Se algum <font color=\"#ee596f\">bontão não fucionar</font>, saia e entre novamente no navegador.";break;
-case 'memoria':document.getElementById("msgs").innerHTML = "Ao ligar pela primeira vez no dia, aguarde 2 minutos.";break;
-case 'kp':document.getElementById("msgs").innerHTML = "Seguidos KP, deslige totalmente e retire o cabo de força, por 10 minutos.";break;
+case 'memoria':document.getElementById("msgs").innerHTML = "Após 5 erros de memória cheia, <font color=\"#ee596f\">saia e entre no navegador</font>.";break;
+case 'demora':document.getElementById("msgs").innerHTML = "Demorando muito para ativar o JB, <font color=\"#ee596f\">deslige totalmente</font> e retire o cabo de força, por 10 min.";break;
 case '6':document.getElementById("msgs").innerHTML = 
 "<h1 style='color:#ee596f;font-size:22px'><font color=\"#49c179\">Host Full (várias opções de exploits e payloads):<br></font><a href=\"https://ps4macedo.github.io/JB/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/JB/</font></a><br><br><font color=\"#49c179\">Hosts (um só exploit e várias opções de payloads):<br></font>HEN 2.1.3: <a href=\"https://ps4macedo.github.io/h213/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/h213/</font></a><br>HEN 2.1.3b: <a href=\"https://ps4macedo.github.io/h213b/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/h213b/</font></a><br><br><font color=\"#49c179\">Hosts Lights (só um exploit e sem playloads):</font><br>HEN 2.1.3: <a href=\"https://ps4macedo.github.io/213/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/213/</font></a><br>HEN 2.1.3b: <a href=\"https://ps4macedo.github.io/213b/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/213b/</font></a><br>HEN 2.2.5: <a href=\"https://ps4macedo.github.io/225/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/225/</font></a><br>HEN 3.0.0: <a href=\"https://ps4macedo.github.io/300/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/300/</font></a></h1>";
 break;
@@ -150,8 +149,8 @@ switch (dica) {
 case 'cache':document.getElementById("msgs").innerHTML = "Clique para ver como limpar e atualizar a <font color=\"#ee596f\">CACHE.</font>";break;
 case 'usb':document.getElementById("msgs").innerHTML = "<font color=\"#ee596f\">Desconecte</font> todos os cabos USB, antes do desbloqueio.";break;
 case 'botao':document.getElementById("msgs").innerHTML = "Se algum <font color=\"#ee596f\">bontão não fucionar</font>, saia e entre novamente no navegador.";break;
-case 'memoria':document.getElementById("msgs").innerHTML = "Ao ligar pela primeira vez no dia, aguarde 2 minutos.";break;
-case 'kp':document.getElementById("msgs").innerHTML = "Seguidos KP, deslige totalmente e retire o cabo de força, por 10 minutos.";break;
+case 'memoria':document.getElementById("msgs").innerHTML = "Após 5 erros de memória cheia, <font color=\"#ee596f\">saia e entre no navegador</font>.";break;
+case 'demora':document.getElementById("msgs").innerHTML = "Demorando muito para ativar o JB, <font color=\"#ee596f\">deslige totalmente</font> e retire o cabo de força, por 10 min.";break;
 case '6':document.getElementById("msgs").innerHTML = "Clique para ver outros Hosts";break;
 case 'e1':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + HEN v2.1.3</font> (sleirsgoevy).";break;
 case 'mira+':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + Mira + ToDex + Spoof fw8.03</font>(<font style='color:#ee596f;'>INSTÁVEL</font>).";break;
