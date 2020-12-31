@@ -7,7 +7,6 @@ arabicGuy127.js
 arabicGuy132.js
 backup.js
 bg1.png
-binloader.html
 dbBackup.js
 dbRestore.js
 disableUpd.js
@@ -46,3 +45,9 @@ todex.js
 utils.js
 vr.js
 webrte.js
+binloader\index.html
+binloader\int64.js
+binloader\ps4.js
+binloader\rop.js
+binloader\userland.js
+binloader\utils.js
