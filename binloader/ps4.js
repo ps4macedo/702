@@ -475,7 +475,7 @@ function prepareUAF() {
 
 /* HTMLElement spray */
 function sprayHTMLTextArea() {
-	debug_log("Processo iniciado ...");
+	debug_log("[+] Pulverizando elemento de área de texto HTML ...");
 
 	let textarea_div_elem = document.createElement("div");
 	document.body.appendChild(textarea_div_elem);
