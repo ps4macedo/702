@@ -94,15 +94,15 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<fo
 <button class="button" onmouseover="dicas2('kernelClock')" onMouseOut="fora()"  onclick="load_kernelClock(); return false"> Kernel-Clock </button>
 <button class="button" onmouseover="dicas2('cu8')" onMouseOut="fora()"  onclick="load_kernelDumper(); return false"> kernel Dumper </button>
 <br><br>
-<button class="button" onmouseover="dicas2('binloader')" onMouseOut="fora()"  onclick="load_binloader(); return false"><font size="4">Bin Loader</font></button>
+<button class="button" onmouseover="dicas2('binloader')" onMouseOut="fora()"  onclick="load_binloader(); return false">Bin Loader</button>
 <button class="button" onmouseover="dicas2('cu20')" onMouseOut="fora()"  onclick="load_enableVR(); return false"> Enable VR </button>
 <button class="button" onmouseover="dicas2('webrte')" onMouseOut="fora()"  onclick="load_webrte(); return false"> WebRTE </button>
 <a href="http://ps4trainer.com/Trainer/index.html" target="_blank" onmouseover="dicas2('cu15')" onMouseOut="fora()" ><button class="button"> Trainer </button></a>
 <button class="button" onmouseover="dicas2('cu10')" onMouseOut="fora()"  onclick="load_historyBlocker(); return false"> Hist. Blocker </button>
 <button class="button" onmouseover="dicas2('cu11')" onMouseOut="fora()"  onclick="load_disableUpd(); return false"> Disable Upd </button>
 <button class="button" onmouseover="dicas2('cu12')" onMouseOut="fora()"  onclick="load_enableUpd(); return false"> Enable Upd </button>
-<button class="button" onmouseover="dicas2('cu13')" onMouseOut="fora()"  onclick="load_dbBackup(); return false"> DB Backup </button>
-<button class="button" onmouseover="dicas2('cu14')" onMouseOut="fora()"  onclick="load_dbRestore(); return false"> DB Restore </button>
+<button class="button" onmouseover="dicas2('dbBackup')" onMouseOut="fora()"  onclick="load_dbBackup(); return false"> DB Backup </button>
+<button class="button" onmouseover="dicas2('dbRestore')" onMouseOut="fora()"  onclick="load_dbRestore(); return false"> DB Restore </button>
 <br><br>
 <button class="button" onmouseover="dicas2('gta100')" onMouseOut="fora()"  onclick="load_arabicGuy100(); return false"> GTA 1.00 </button>
 <button class="button" onmouseover="dicas2('gta127')" onMouseOut="fora()"  onclick="load_arabicGuy127(); return false"> GTA 1.27</button>
@@ -112,7 +112,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<fo
 <button class="button" onmouseover="dicas2('spoof')" onMouseOut="fora()"  onclick="load_spoof(); return false"> Spoof </button>
 <button class="button"  onmouseover="dicas2('cu16')" onMouseOut="fora()"  onclick="load_fanThreshold(); return false"> <font size=2px>temp. alvo</font></button><select id="tempC"  style="font-size:20px;height:35px;width:60px;background-color:transparent;color:#ee596f;border:2px solid #404040;"></select><font size=5px>&#176;C</font>
 <script>
-for(var i=50; i<=80; i=i+5){
+for(var i=55; i<=80; i=i+3){
     var select = document.getElementById("tempC");
     var option = document.createElement("OPTION");
 	select.options.add(option);
@@ -123,26 +123,22 @@ tempC.value=70;
 </script>
 <br><br>
 <h1 style='font-size:25px;'><u><font color="#49c179">Dicas/Informações:</font></u>&nbsp
-<button class="button" onclick="dicas('1')" onMouseOut="fora()" ; onmouseover="dicas2('1');">CACHE</button>
-<button class="button" onclick="dicas('2')" onMouseOut="fora()" ; onmouseover="dicas2('2');">USB</button>
-<button class="button" onclick="dicas('3')" onMouseOut="fora()" ; onmouseover="dicas2('3');">WWW</button>
-<button class="button" onclick="dicas('4')" onMouseOut="fora()" ; onmouseover="dicas2('4');">Novo dia</button>
-<button class="button" onclick="dicas('5')" onMouseOut="fora()" ; onmouseover="dicas2('5');">PK</button>
-<button class="button" onclick="dicas('6')" onmouseover="dicas2('6');"><font color="#6089f6"><b>Hosts</b></font></button>
+<button class="button" onclick="clique('cache')" onMouseOut="fora()" ; onmouseover="dicas2('cache');">CACHE</button>
+<button class="button" onclick="clique('usb')" onMouseOut="fora()" ; onmouseover="dicas2('usb');">USB</button>
+<button class="button" onclick="clique('botao')" onMouseOut="fora()" ; onmouseover="dicas2('botao');">Botão</button>
+<button class="button" onclick="clique('memoria')" onMouseOut="fora()" ; onmouseover="dicas2('memoria');">M. cheia</button>
+<button class="button" onclick="clique('kp')" onMouseOut="fora()" ; onmouseover="dicas2('kp');">PK</button>
+<button class="button" onclick="clique('6')" onmouseover="dicas2('6');"><font color="#6089f6"><b>Hosts</b></font></button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
 </div>
-<!--<br>
-<div align="right"><font size="3" color="white" face="Verdana, Geneva, sans-serif"><b>FAMACEDO</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div></font>-->
-</div>
 <script>
-function dicas (dica) {
+function clique (dica) {
 switch (dica) {
-case '1':document.getElementById("msgs").innerHTML = 
-"<h1 style='color:#ffffff;font-size:22px;'>Limpeza e atualização da cache: Ao entrar no navegador quando aparecer o fundo branco, imediatamente, segure o circulo até aparecer a tela \"Páginas usadas confrequência\", clique no botão OPTIONS, selecione \"Excluir tudo\",confirme, OPTIONS novamente, selecione \"Histórico de navegação\", clique em OPTIONS, e \"Limpar histórico de navegação\", confirme, volte a \"Páginas usadas com frequência\", mais uma vez OPTIONS, agora selecione \"Configurações\" e \"Excluir cookies\",confirme, depois \"Limpar dados de sites\" e confirme, volte e digite o endereço do host e adicione aos favoritos.";break;
-case '2':document.getElementById("msgs").innerHTML = "Desconecte todos os cabos USB, antes do desbloqueio.";break;
-case '3':document.getElementById("msgs").innerHTML = "Se travar, saia e entre novamente no navegador.";break;
-case '4':document.getElementById("msgs").innerHTML = "Ao ligar pela primeira vez no dia, aguarde 2 minutos.";break;
-case '5':document.getElementById("msgs").innerHTML = "Seguidos KP, deslige totalmente e retire o cabo de força, por 10 minutos.";break;
+case 'cache':document.getElementById("msgs").innerHTML = "<h1 style='color:#ffffff;font-size:22px;'>Limpeza e atualização da cache: Ao entrar no navegador quando aparecer o fundo branco, imediatamente, segure o circulo até aparecer a tela \"Páginas usadas confrequência\", clique no botão OPTIONS, selecione \"Excluir tudo\",confirme, OPTIONS novamente, selecione \"Histórico de navegação\", clique em OPTIONS, e \"Limpar histórico de navegação\", confirme, volte a \"Páginas usadas com frequência\", mais uma vez OPTIONS, agora selecione \"Configurações\" e \"Excluir cookies\",confirme, depois \"Limpar dados de sites\" e confirme, volte e digite o endereço do host e adicione aos favoritos.";break;
+case 'usb':document.getElementById("msgs").innerHTML = "<font color=\"#ee596f\">Desconecte</font> todos os cabos USB, antes do desbloqueio.";break;
+case 'botao':document.getElementById("msgs").innerHTML = "Se algum <font color=\"#ee596f\">bontão não fucionar</font>, saia e entre novamente no navegador.";break;
+case 'memoria':document.getElementById("msgs").innerHTML = "Ao ligar pela primeira vez no dia, aguarde 2 minutos.";break;
+case 'kp':document.getElementById("msgs").innerHTML = "Seguidos KP, deslige totalmente e retire o cabo de força, por 10 minutos.";break;
 case '6':document.getElementById("msgs").innerHTML = 
 "<h1 style='color:#ee596f;font-size:22px'><font color=\"#49c179\">Host Full (várias opções de exploits e payloads):<br></font><a href=\"https://ps4macedo.github.io/JB/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/JB/</font></a><br><br><font color=\"#49c179\">Hosts (um só exploit e várias opções de payloads):<br></font>HEN 2.1.3: <a href=\"https://ps4macedo.github.io/h213/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/h213/</font></a><br>HEN 2.1.3b: <a href=\"https://ps4macedo.github.io/h213b/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/h213b/</font></a><br><br><font color=\"#49c179\">Hosts Lights (só um exploit e sem playloads):</font><br>HEN 2.1.3: <a href=\"https://ps4macedo.github.io/213/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/213/</font></a><br>HEN 2.1.3b: <a href=\"https://ps4macedo.github.io/213b/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/213b/</font></a><br>HEN 2.2.5: <a href=\"https://ps4macedo.github.io/225/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/225/</font></a><br>HEN 3.0.0: <a href=\"https://ps4macedo.github.io/300/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/300/</font></a></h1>";
 break;
@@ -151,12 +147,11 @@ default:document.getElementById("msgs").innerHTML = "erro";
 }
 function dicas2 (dica) {
 switch (dica) {
-case '1':document.getElementById("msgs").innerHTML = 
-"Clique para ver como limpar e atualizar a <font color=\"#ee596f\">CACHE.</font>";break;
-case '2':document.getElementById("msgs").innerHTML = "Desconecte todos os cabos USB, antes do desbloqueio.";break;
-case '3':document.getElementById("msgs").innerHTML = "Se travar, saia e entre novamente no navegador.";break;
-case '4':document.getElementById("msgs").innerHTML = "Ao ligar pela primeira vez no dia, aguarde 2 minutos.";break;
-case '5':document.getElementById("msgs").innerHTML = "Seguidos KP, deslige totalmente e retire o cabo de força, por 10 minutos.";break;
+case 'cache':document.getElementById("msgs").innerHTML = "Clique para ver como limpar e atualizar a <font color=\"#ee596f\">CACHE.</font>";break;
+case 'usb':document.getElementById("msgs").innerHTML = "<font color=\"#ee596f\">Desconecte</font> todos os cabos USB, antes do desbloqueio.";break;
+case 'botao':document.getElementById("msgs").innerHTML = "Se algum <font color=\"#ee596f\">bontão não fucionar</font>, saia e entre novamente no navegador.";break;
+case 'memoria':document.getElementById("msgs").innerHTML = "Ao ligar pela primeira vez no dia, aguarde 2 minutos.";break;
+case 'kp':document.getElementById("msgs").innerHTML = "Seguidos KP, deslige totalmente e retire o cabo de força, por 10 minutos.";break;
 case '6':document.getElementById("msgs").innerHTML = "Clique para ver outros Hosts";break;
 case 'e1':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + HEN v2.1.3</font> (sleirsgoevy).";break;
 case 'mira+':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + Mira + ToDex + Spoof fw8.03</font>(<font style='color:#ee596f;'>INSTÁVEL</font>).";break;
@@ -177,12 +172,12 @@ case 'cu9':document.getElementById("msgs").innerHTML = "Modo de depuração do c
 case 'cu10':document.getElementById("msgs").innerHTML = "<font style='color:#ee596f;'>Desabilita</font> a última página usada no navegador PS4.";break;
 case 'cu11':document.getElementById("msgs").innerHTML = "<font style='color:#ee596f;'>Desabilitas as atualizações</font> automáticas de firmware.";break;
 case 'cu12':document.getElementById("msgs").innerHTML = "<font style='color:#ee596f;'>Habilitas as atualizações</font> automáticas de firmware.";break;
-case 'cu13':document.getElementById("msgs").innerHTML = "Faz <font style='color:#ee596f;'>backup do banco de dados e os jogos</font> instalados via USB.";break;
-case 'cu14':document.getElementById("msgs").innerHTML = "<font style='color:#ee596f;'>Restaura um backup</font> do banco de dados e os jogos via USB.";break;
+case 'dbBackup':document.getElementById("msgs").innerHTML = "Faz <font style='color:#ee596f;'>cópia do banco de dados e dados de usuários</font> via USB.";break;
+case 'dbRestore':document.getElementById("msgs").innerHTML = "Restaura <font style='color:#ee596f;'>cópia do banco de dados e dados de usuário</font> via USB.";break;
 case 'cu16':document.getElementById("msgs").innerHTML = "Permite alterar a temperatura alvo do PS4 (<font style='color:#ee596f;'>padrão 79°C</font>).";break;
-case 'cu17':document.getElementById("msgs").innerHTML = "sem informação.";break;
+case 'cu17':document.getElementById("msgs").innerHTML = "<font style='color:#ee596f;'>Habilita</font> o navegador.";break;
 case 'cu18':document.getElementById("msgs").innerHTML = "em teste.";break;
-case 'spoof':document.getElementById("msgs").innerHTML = "Simula o firmware do sistema para <font style='color:#ee596f;'>8.03</font>.";break;
+case 'spoof':document.getElementById("msgs").innerHTML = "Simula o firmware <font style='color:#ee596f;'>8.03 para o Headset</font>.";break;
 case 'cu20':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>PSVR</font> (ative o HEN 2.1.3 primeiro).";;break;
 case 'gta100':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V</font> (Arabic Guy versão 1.00).";;break;
 case 'gta127':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V</font> (Arabic Guy versão 1.27).";;break;
