@@ -215,7 +215,7 @@ var checkStatus = document.getElementById("auto").checked;
 document.getElementById("auto").checked = checkStatus;
 localStorage.setItem('auto', checkStatus);
 
-if(checkStatus && entrando){
+if(checkStatus){
 document.getElementById("msgs").innerHTML = "Auto HEN <font color=\"#ee596f\">ATIVADO.</font> O desbloqueio será <font color=\"#ee596f\">AUTOMÁTICO</font> na próxima vez que entrar no navegador.";}
 else{
 document.getElementById("msgs").innerHTML = "Auto HEN <font color=\"#ee596f\">DESATIVADO.</font> O desbloqueio será <font color=\"#ee596f\">MANUAL</font> na próxima vez que entrar no navegador.";}
@@ -224,7 +224,7 @@ document.getElementById("msgs").innerHTML = "Auto HEN <font color=\"#ee596f\">DE
 var checkStatusStorage = localStorage.getItem("auto");
 	
 function pegarCheck(){
-if (checkStatusStorage == 'true'){
+if (checkStatusStorage && entrando){
 document.getElementById("auto").checked = true ; 
 document.getElementById('hen').style.display = 'none';
 document.getElementById('msgAuto').style.display = 'inline';
