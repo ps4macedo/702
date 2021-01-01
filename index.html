@@ -224,11 +224,12 @@ document.getElementById("msgs").innerHTML = "Auto HEN <font color=\"#ee596f\">DE
 var checkStatusStorage = localStorage.getItem("auto");
 	
 function pegarCheck(){
-if (checkStatusStorage && entrando){
+if (checkStatusStorage){
 document.getElementById("auto").checked = true ; 
 document.getElementById('hen').style.display = 'none';
 document.getElementById('msgAuto').style.display = 'inline';
-load_exploit_HEN(); return false;}
+if (!retorno){load_exploit_HEN(); return false;}
+}
 else{
 document.getElementById("auto").checked = false ;
 document.getElementById('hen').style.display = 'inline';
