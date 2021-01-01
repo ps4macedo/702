@@ -62,7 +62,7 @@ background-color: transparent;
 <button id="hen" class="button" onmouseover="dicas2('e1')" onMouseOut="fora()"  onclick="load_exploit_HEN(); return false"><font size="4" color="#6089f6">HEN 2.1.3</font></button> 
 <button id="hen" class="button" onmouseover="dicas2('teste')" onMouseOut="fora()"  onclick="load_exploit_miraTeste(); return false"><font size="4" color="#ee596f">Mira</font></button>
 <button id="hen" class="button" onmouseover="dicas2('mira+')" onMouseOut="fora()"  onclick="load_exploit_Mira(); return false"><font size="4" color="#ee596f">Mira+</font></button> 
-<button id="hen" class="button" onmouseover="dicas2('e3')" onMouseOut="fora()"  onclick="load_exploit_light(); return false"><font size="4">Light</font></button><br>
+<button id="hen" class="button" onmouseover="dicas2('e3')" onMouseOut="fora()"  onclick="load_exploit_light(); return false"><font size="4">Light</font></button>
 <h1 id=msgAuto style='font-size:30px;text-align:center;color:#6089f6;'>Auto HEN 2.1.3 <font color="#ee596f">ATIVADO</font></h1>
 </div>
 <br>
@@ -224,12 +224,11 @@ document.getElementById("msgs").innerHTML = "Auto HEN <font color=\"#ee596f\">DE
 var checkStatusStorage = localStorage.getItem("auto");
 	
 function pegarCheck(){
-if (checkStatusStorage){
+if (checkStatusStorage == 'true'){
 document.getElementById("auto").checked = true ; 
 document.getElementById('hen').style.display = 'none';
 document.getElementById('msgAuto').style.display = 'inline';
-if (!retorno){load_exploit_HEN(); return false;}
-}
+load_exploit_HEN(); return false;}
 else{
 document.getElementById("auto").checked = false ;
 document.getElementById('hen').style.display = 'inline';
