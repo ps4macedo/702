@@ -50,6 +50,7 @@ background-color: transparent;
 </style>
 <body onload="retornando(); pegarCheck(); statusCache(); invisivel();" style="text-align:center">
 <div class="invisivel">
+<br>
 <h1 style='font-size:27px;text-align:center;'><u><font color="#49c179">JAILBREAK 7.02 versão 6</font></u><br>
 <font size="3">Ative ou Desative o <font color="#ee596f"><b>Auto-HEN</b></font> 
 <font color="#ee596f" size="5"><b>aqui</b></font>
@@ -237,7 +238,7 @@ document.getElementById('hen3').style.display = 'inline';
 document.getElementById('hen4').style.display = 'inline';
 document.getElementById('msgAuto').style.display = 'none';}
 }
-
+let x = new Boolean(false);
 function retornando(){
 	const urlParams = new URLSearchParams(location.search);
 	if (urlParams.get('retorno')){
@@ -248,8 +249,15 @@ function retornando(){
 		url = new URL(window.location.href);
 		url.searchParams.delete("retorno");
 		window.history.replaceState(null, null, url);
-	}else{}
+	}else{if (checkStatusStorage == 'true'){load_exploit_HEN(); return false;}}
 }
+
+//let params = url.searchParams; //Obtém os parâmetros de consulta da url. 
+//Verifica se o parâmetro a existe...
+//if (params.has('retorno')){alert("teste");}
+
+//if ((checkStatusStorage) && (x)){load_exploit_HEN(); return false;}
+//if (checkStatusStorage && x){alert("teste");}
 
 //COMEÇA AQUI OS PAYLOADS
 function load_exploit_HEN(){window.location.replace("payload.html#f=hen.js");}
