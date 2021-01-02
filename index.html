@@ -208,7 +208,7 @@ switch (appCache.status) {
 };	
 }
 
-	
+/*	
 function check() {
 var checkStatus = document.getElementById("auto").checked;
 document.getElementById("auto").checked = checkStatus;
@@ -240,26 +240,30 @@ document.getElementById('hen3').style.display = 'inline';
 document.getElementById('hen4').style.display = 'inline';
 document.getElementById('msgAuto').style.display = 'none';}
 }
-let x = new Boolean(false);
+
 function retornando(){
-	const urlParams = new URLSearchParams(location.search);
-	if (urlParams.get('retorno')){
+    var retorno = decodeURIComponent(document.location.hash.substr(3));
+	if (retorno){
 		document.getElementById("msgs").innerHTML = "Pressione o botão <font style='color:#ee596f;'>CIRCULO</font> para sair do navegador.";
 		var elementos = document.querySelectorAll(".invisivel");	
 		elementos[1].style.display = 'none';	   
 		elementos[3].style.display = 'none';
+
 		url = new URL(window.location.href);
-		url.searchParams.delete("retorno");
-		window.history.replaceState(null, null, url);
+		//var urlString = url;
+		//urlString = urlString.replace('#','?');
+		//url2 = url2.replace("#","?");
+		//alert (urlString);
+		url.searchParams.delete("f");
+		//alert(url);		
+		window.history.pushState(null, null, url);					
+
 	}else{if (checkStatusStorage == 'true'){load_exploit_HEN(); return false;}}
 }
-
 //let params = url.searchParams; //Obtém os parâmetros de consulta da url. 
 //Verifica se o parâmetro a existe...
 //if (params.has('retorno')){alert("teste");}
-
-//if ((checkStatusStorage) && (x)){load_exploit_HEN(); return false;}
-//if (checkStatusStorage && x){alert("teste");}
+*/
 
 //COMEÇA AQUI OS PAYLOADS
 function load_exploit_HEN(){window.location.replace("payload.html#f=hen.js");}
