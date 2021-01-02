@@ -48,7 +48,7 @@ height:25px;
 background-color: transparent;
 }
 </style>
-<body onload="retornando(); pegarCheck(); statusCache(); invisivel();" style="text-align:center">
+<body onload="pegarCheck(); statusCache(); invisivel();" style="text-align:center">
 <div class="invisivel">
 <br>
 <h1 style='font-size:27px;text-align:center;'><u><font color="#49c179">JAILBREAK 7.02 versão 6</font></u><br>
@@ -124,7 +124,6 @@ tempC.value=70;
 <button class="button" onclick="clique('memoria')" onMouseOut="fora()" ; onmouseover="dicas2('memoria');">M. cheia</button>
 <button class="button" onclick="clique('demora')" onMouseOut="fora()" ; onmouseover="dicas2('demora');">Demora</button>
 <button class="button" onclick="clique('6')" onmouseover="dicas2('6');"><font color="#6089f6"><b>Hosts</b></font></button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
 </div>
 <script>
 function clique (aoclicar) {
@@ -190,20 +189,29 @@ function invisivel() {
   var appCache = window.applicationCache;
   if(appCache.status == appCache.DOWNLOADING){
     var elementos = document.querySelectorAll(".invisivel");	
-	for (var i = 0; i < elementos.length; i++) {
-		elementos[i].style.display = 'none';	   
-    }
+	elementos[0].style.display = 'none';
+	elementos[1].style.display = 'none';
+	elementos[2].style.display = 'none';
+	elementos[3].style.display = 'none';
+//	for (var i = 0; i < elementos.length; i++) {
+//		elementos[i].style.display = 'none';	   
+//    }
   }	
 }	
+
 function statusCache(){
 var appCache = window.applicationCache;
 switch (appCache.status) {
   case appCache.UNCACHED:
     document.getElementById("msgs2").innerHTML = "UNCACHED";
     var elementos = document.querySelectorAll(".invisivel");	
-	for (var i = 0; i < elementos.length; i++) {
-		elementos[i].style.display = 'none';	   
-    }
+	elementos[0].style.display = 'none';
+	elementos[1].style.display = 'none';
+	elementos[2].style.display = 'none';
+	elementos[3].style.display = 'none';
+//	for (var i = 0; i < elementos.length; i++) {
+//		elementos[i].style.display = 'none';	   
+//    }
     break;
 };	
 }
@@ -240,7 +248,6 @@ document.getElementById('hen4').style.display = 'inline';
 document.getElementById('msgAuto').style.display = 'none';}
 }
 
-/*
 function retornando(){
     var retorno = decodeURIComponent(document.location.hash.substr(3));
 	if (retorno){
