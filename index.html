@@ -250,7 +250,7 @@ function retornando(){
 		elementos[1].style.display = 'none';	   
 		elementos[3].style.display = 'none';
 		var url = window.location.pathname
-		window.history.pushState(null, null, url);					
+		window.history.replaceState(null, null, url);					
 	}else{if (checkStatusStorage == 'true'){load_exploit_HEN(); return false;}}
 }
 
