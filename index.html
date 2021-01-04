@@ -30,7 +30,7 @@ background-repeat:no-repeat;
   box-shadow:0 5px 0 #878787;
 }
 .button:hover{
-font-size:20px;
+font-size:22px;
   background:#242424;
   border:2px solid #ffffff;
   box-shadow:0 5px 0 #cccccc;
@@ -116,6 +116,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<fo
 <button class="button" onmouseover="dicas2('linux3')" onMouseOut="fora()"  onclick="load_linux3(); return false"> Linux 3GB</button>
 <button class="button" onmouseover="dicas2('cu17')" onMouseOut="fora()"  onclick="load_enableBrowser(); return false"> Enable Browser </button>
 <button class="button" onmouseover="dicas2('cu18')" onMouseOut="fora()"  onclick="load_henSP5Cdex82(); return false"> henSP5Cdex82 </button>
+<button class="button" onmouseover="dicas2('teste')" onMouseOut="fora()"  onclick="load_teste(); return false"> teste </button>
 
 <button class="button"  onmouseover="dicas2('cu16')" onMouseOut="fora()"  onclick="load_fanThreshold(); return false"> <font size=2px>temp. alvo</font></button><select id="tempC"  style="font-size:20px;height:35px;width:60px;background-color:transparent;color:#ee596f;border:2px solid #404040;"></select><font size=5px>&#176;C</font>
 <script>
@@ -193,6 +194,7 @@ case 'nat100':document.getElementById("msgs").innerHTML = "<font color=\"#ee596f
 case 'nat127':document.getElementById("msgs").innerHTML = "<font color=\"#ee596f\">EM BREVE - </font>Ativa o <font style='color:#ee596f;'>MOD GTA V Native Caller v1.27</font> (Direcional Direito + Quadrado).";;break;
 case 'nat132':document.getElementById("msgs").innerHTML = "<font color=\"#ee596f\">EM BREVE - </font>Ativa o <font style='color:#ee596f;'>MOD GTA V Native Caller v1.32</font> (Direcional Direito + Quadrado).";;break;
 case 'lam132':document.getElementById("msgs").innerHTML = "<font color=\"#ee596f\">EM BREVE - </font>Ativa o <font style='color:#ee596f;'>MOD GTA V Lamance v1.32</font> (Direcional Direito + Quadrado).";;break;
+case 'teste':document.getElementById("msgs").innerHTML = "Esse botão é para <font color=\"#ee596f\">testes</font> do desenvolvedor do host.";;break;
 
 default:document.getElementById("msgs").innerHTML = "erro";
 }
@@ -305,6 +307,7 @@ function b_load_native127(){window.location.replace("payload.html#f=native127.js
 function b_load_native132(){window.location.replace("payload.html#f=native132.js");}
 function b_load_native132(){window.location.replace("payload.html#f=lamance132.js");}
 function b_load_spoof(){window.location.replace("payload.html#f=spoof.js");}
+function load_teste(){window.location.replace("payload.html#f=teste.js");}
 </script>
 </body>
 </html>
