@@ -1,6 +1,6 @@
-<html manifest="cache.manifest">
+<html><!-- manifest="cache.manifest">-->
 <head>
-<title>JAILBREAK 7.02 v6</title>
+<title>JAILBREAK 7.02 v7</title>
 <style>
 body{
 color: white;
@@ -52,7 +52,7 @@ background-color: transparent;
 <body onload="retornando(); pegarCheck(); statusCache(); invisivel();" style="text-align:center">
 <div class="invisivel">
 <br>
-<h1 style='font-size:27px;text-align:center;'><u><font color="#49c179">JAILBREAK 7.02 versão 6</font></u><br>
+<h1 style='font-size:27px;text-align:center;'><u><font color="#49c179">JAILBREAK 7.02 versão 7</font></u><br>
 <font size="3">Ative ou Desative o <font color="#ee596f"><b>Auto-HEN</b></font> 
 <font color="#ee596f" size="5"><b>aqui</b></font>
 <input type="checkbox" style="background-color:transparent" id="auto" onclick="check()"/>
@@ -75,7 +75,7 @@ background-color: transparent;
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline: <font color=\"#ee596f\">" + Percent + "%</font>";}
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação na Cache Concluída! <font color=\"#ee596f\">Aguarde ...</font></font>";},1000);setTimeout(function(){window.msgs.innerHTML="Agora saia usando o <font color=\"#ee596f\">CIRCULO, desabilite a REDE e RETORNE ao navegador.</font>";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};</script>
 </head>
-<h1 id=msgs style='font-size:25px;text-align:center;color:#6089f6;'>MENU JAILBREAK PS4 <font color="#ee596f">8.03</font> v6</h1>
+<h1 id=msgs style='font-size:25px;text-align:center;color:#6089f6;'>MENU JAILBREAK PS4 <font color="#ee596f">8.03</font> v7</h1>
 <hr width="47%" size="1" color="#ff5757">
 <div class="invisivel" style="text-align:center">
 <font size="3">Pressione o <font color="#ee596f"><b>CIRCULO PARA SAIR<b></font>.</font>
@@ -88,7 +88,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<fo
 <button class="button" onmouseover="dicas2('cu2')" onMouseOut="fora()"  onclick="load_ftp(); return false"> FTP </button>
 <button class="button" onmouseover="dicas2('ce303916fix')" onMouseOut="fora()"  onclick="load_ce303916fix(); return false"> ce-303916 fix </button>
 <button class="button" onmouseover="dicas2('spoof')" onMouseOut="fora()"  onclick="load_spoof(); return false"> Spoof </button>
-<button class="button" onmouseover="dicas2('cu20')" onMouseOut="fora()"  onclick="load_enableVR(); return false"> Enable VR </button>
+<button class="button" onmouseover="dicas2('cu20')" onMouseOut="fora()"  onclick="load_enableVR(); return false"> VR v2 </button>
 <br><br>
 
 <button class="button" onmouseover="dicas2('cu8')" onMouseOut="fora()"  onclick="load_kernelDumper(); return false"> kernel Dumper </button>
@@ -106,10 +106,10 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<fo
 <button class="button" onmouseover="dicas2('guy127')" onMouseOut="fora()"  onclick="load_arabicGuy127(); return false"> GTA 1.27 GUY </button>
 <button class="button" onmouseover="dicas2('guy132')" onMouseOut="fora()"  onclick="load_arabicGuy132(); return false"> GTA 1.32 GUY</button>
 
-<button class="button" onmouseover="dicas2('nat100')" onMouseOut="fora()"  onclick="load_native100(); return false"> GTA 1.00 NAT </button>
+<!--<button class="button" onmouseover="dicas2('nat100')" onMouseOut="fora()"  onclick="load_native100(); return false"> GTA 1.00 NAT </button>
 <button class="button" onmouseover="dicas2('nat127')" onMouseOut="fora()"  onclick="load_native127(); return false"> GTA 1.27 NAT </button>
-<button class="button" onmouseover="dicas2('nat132')" onMouseOut="fora()"  onclick="load_native132(); return false"> GTA 1.32 NAT</button>
-<button class="button" onmouseover="dicas2('lam132')" onMouseOut="fora()"  onclick="load_lamance132(); return false"> GTA 1.32 LAM</button>
+<button class="button" onmouseover="dicas2('nat132')" onMouseOut="fora()"  onclick="load_native132(); return false"> GTA 1.32 NAT</button>-->
+<button class="button" onmouseover="dicas2('bee132')" onMouseOut="fora()"  onclick="load_BeefQueef132(); return false"> GTA 1.32 Bee</button>
 
 <br><br>
 <button class="button" onmouseover="dicas2('linux1')" onMouseOut="fora()"  onclick="load_linux1(); return false"> Linux 1GB</button>
@@ -192,10 +192,7 @@ case 'ce303916fix':document.getElementById("msgs").innerHTML = "Corrigi efetuais
 case 'guy100':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V ArabicGuy v1.00</font> (Direcional Direito + Quadrado).";;break;
 case 'guy127':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V ArabicGuy v1.27</font> (Direcional Direito + Quadrado).";;break;
 case 'guy132':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V ArabicGuy v1.32</font> (Direcional Direito + Quadrado).";;break;
-case 'nat100':document.getElementById("msgs").innerHTML = "<font color=\"#ee596f\">EM BREVE - </font>Ativa o <font style='color:#ee596f;'>MOD GTA V Native Caller v1.00</font> (Direcional Direito + Quadrado).";;break;
-case 'nat127':document.getElementById("msgs").innerHTML = "<font color=\"#ee596f\">EM BREVE - </font>Ativa o <font style='color:#ee596f;'>MOD GTA V Native Caller v1.27</font> (Direcional Direito + Quadrado).";;break;
-case 'nat132':document.getElementById("msgs").innerHTML = "<font color=\"#ee596f\">EM BREVE - </font>Ativa o <font style='color:#ee596f;'>MOD GTA V Native Caller v1.32</font> (Direcional Direito + Quadrado).";;break;
-case 'lam132':document.getElementById("msgs").innerHTML = "<font color=\"#ee596f\">EM BREVE - </font>Ativa o <font style='color:#ee596f;'>MOD GTA V Lamance v1.32</font> (Direcional Direito + Quadrado).";;break;
+case 'bee132':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V BeefQuee v1.32</font> (Direcional Direito + Quadrado).";;break;
 case 'teste':document.getElementById("msgs").innerHTML = "Esse botão é para <font color=\"#ee596f\">testes</font> do desenvolvedor do host.";;break;
 
 default:document.getElementById("msgs").innerHTML = "erro";
@@ -203,7 +200,7 @@ default:document.getElementById("msgs").innerHTML = "erro";
 }
 
 function fora(){
-document.getElementById("msgs").innerHTML = "PS4 MENU JAILBREAK <font style='color:#ee596f;'>7.02</font> v6";
+document.getElementById("msgs").innerHTML = "PS4 MENU JAILBREAK <font style='color:#ee596f;'>7.02</font> v7";
 }
 
 function invisivel() {
@@ -308,7 +305,7 @@ function load_arabicGuy132(){window.location.replace("payload.html#f=arabicGuy13
 function b_load_native100(){window.location.replace("payload.html#f=native100.js");}
 function b_load_native127(){window.location.replace("payload.html#f=native127.js");}
 function b_load_native132(){window.location.replace("payload.html#f=native132.js");}
-function b_load_native132(){window.location.replace("payload.html#f=lamance132.js");}
+function load_BeefQueef132(){window.location.replace("payload.html#f=BeefQueef132.js");}
 function load_spoof(){window.location.replace("payload.html#f=spoof.js");}
 function b_load_teste(){window.location.replace("payload.html#f=teste.js");}
 </script>
