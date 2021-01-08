@@ -54,3 +54,10 @@ binloader\ps4.js
 binloader\rop.js
 binloader\userland.js
 binloader\utils.js
+webrte.html
+webrte_int64.js
+webrte_payload.js
+webrte_ps4.js
+webrte_rop.js
+webrte_userland.js
+webrte_utils.js
