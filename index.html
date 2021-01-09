@@ -61,10 +61,12 @@ background-color: transparent;
 </div>
 <div class="invisivel">
 <button id="hen1" class="button" onmouseover="dicas2('hen213')" onMouseOut="fora()"  onclick="load_exploit_HEN(); return false"><font size="4" color="#6089f6">HEN 2.1.3</font></button> 
-<button id="hen2" class="button" onmouseover="dicas2('miraMais')" onMouseOut="fora()"  onclick="load_exploit_miraMais(); return false"><font size="4" color="#ee596f">Mira+</font></button> 
-<button id="hen2" class="button" onmouseover="dicas2('miraMais2')" onMouseOut="fora()"  onclick="load_exploit_miraMais2(); return false"><font size="4" color="#ee596f">Mira+ v2</font></button> 
-<button id="hen3" class="button" onmouseover="dicas2('mira')" onMouseOut="fora()"  onclick="load_exploit_mira2(); return false"><font size="4" color="#ee596f">Mira</font></button>
-<button id="hen4" class="button" onmouseover="dicas2('light')" onMouseOut="fora()"  onclick="load_exploit_light(); return false"><font size="4">Light</font></button>
+<button id="hen2" class="button" onmouseover="dicas2('mira')" onMouseOut="fora()"  onclick="load_exploit_mira2(); return false"><font size="4" color="#ee596f">Mira</font></button>
+<button id="hen3" class="button" onmouseover="dicas2('miraMais2')" onMouseOut="fora()"  onclick="load_exploit_miraMais2(); return false"><font size="4" color="#ee596f">Mira+ v2</font></button> 
+
+<a href="https://github.com/ps4macedo/702/raw/main/apps/ps4macedo.bin" target="_blank" onmouseover="dicas2('light')" onMouseOut="fora()" 
+<button id="hen4" class="button"><font size="4">ESP8266</font></button></a>
+
 </div>
 <div class="invisivel">
 <h1 id="msgAuto" style='font-size:30px;text-align:center;color:#6089f6;'>Auto HEN 2.1.3 <font color="#ee596f">ATIVADO</font></h1>
@@ -93,7 +95,6 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<fo
 
 <button class="button" onmouseover="dicas2('cu8')" onMouseOut="fora()"  onclick="load_kernelDumper(); return false"> kernel Dumper </button>
 <button class="button" onmouseover="dicas2('kernelClock')" onMouseOut="fora()"  onclick="load_kernelClock(); return false"> Kernel Clock </button>
-<button class="button" onmouseover="dicas2('cu10')" onMouseOut="fora()"  onclick="load_historyBlocker(); return false"> Hist. Blocker </button>
 <button class="button" onmouseover="dicas2('cu11')" onMouseOut="fora()"  onclick="load_disableUpd(); return false"> Disable Upd </button>
 <button class="button" onmouseover="dicas2('cu12')" onMouseOut="fora()"  onclick="load_enableUpd(); return false"> Enable Upd </button>
 <button class="button" onmouseover="dicas2('dbBackup')" onMouseOut="fora()"  onclick="load_dbBackup(); return false"> DB Backup </button>
@@ -110,15 +111,13 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<fo
 <button class="button" onmouseover="dicas2('nat127')" onMouseOut="fora()"  onclick="load_native127(); return false"> GTA 1.27 NAT </button>
 <button class="button" onmouseover="dicas2('nat132')" onMouseOut="fora()"  onclick="load_native132(); return false"> GTA 1.32 NAT</button>-->
 <button class="button" onmouseover="dicas2('bee132')" onMouseOut="fora()"  onclick="load_BeefQueef132(); return false"> GTA 1.32 Bee</button>
+<button class="button" onmouseover="dicas2('cu10')" onMouseOut="fora()"  onclick="load_historyBlocker(); return false"> Hist. Blocker </button>
 
 <br><br>
 <button class="button" onmouseover="dicas2('linux1')" onMouseOut="fora()"  onclick="load_linux1(); return false"> Linux 1GB</button>
 <button class="button" onmouseover="dicas2('linux2')" onMouseOut="fora()"  onclick="load_linux2(); return false"> Linux 2GB</button>
 <button class="button" onmouseover="dicas2('linux3')" onMouseOut="fora()"  onclick="load_linux3(); return false"> Linux 3GB</button>
 <button class="button" onmouseover="dicas2('cu17')" onMouseOut="fora()"  onclick="load_enableBrowser(); return false"> Enable Browser </button>
-<button class="button" onmouseover="dicas2('cu18')" onMouseOut="fora()"  onclick="load_henSP5Cdex82(); return false"> henSP5Cdex82 </button>
-<button class="button" onmouseover="dicas2('teste')" onMouseOut="fora()"  onclick="load_teste(); return false"> teste </button>
-
 <button class="button"  onmouseover="dicas2('cu16')" onMouseOut="fora()"  onclick="load_fanThreshold(); return false"> <font size=2px>temp. alvo</font></button><select id="tempC"  style="font-size:20px;height:35px;width:60px;background-color:transparent;color:#ee596f;border:2px solid #404040;"></select><font size=5px>&#176;C</font>
 <script>
 for(var i=55; i<=73; i=i+3){
@@ -163,7 +162,7 @@ case 'demora':document.getElementById("msgs").innerHTML = "Demorando muito para 
 case '6':document.getElementById("msgs").innerHTML = "Clique para ver outros Hosts";break;
 case 'hen213':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + HEN v2.1.3</font> (sleirsgoevy).";break;
 case 'mira':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + Mira</font> (mais estável).";break;
-case 'light':document.getElementById("msgs").innerHTML = "Link para um Host somente com o HEN, <font style='color:#ee596f;'>sem payload</font>.";break;
+case 'light':document.getElementById("msgs").innerHTML = "Link (<font style='color:#ee596f;'>acesse pelo pc</font>) para o DOWNLOAD do <font style='color:#ee596f;'>ESP8266</font> desse Host.";break;
 case 'miraMais':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + Mira + ToDex + Spoof fw8.03 + Fixs </font>(mais estável).";break;
 case 'miraMais2':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + Mira + ToDex + Spoof fw8.03 + Fixs </font>(versão 2 - mais estável).";break;
 case 'binloader':document.getElementById("msgs").innerHTML = "Permite enviar arquivos<font style='color:#ee596f;'> .BIN</font> para o PS4 pela porta <font style='color:#ee596f;'>9020</font>.";break;
@@ -274,12 +273,10 @@ function retornando(){
 //COMEÇA AQUI OS PAYLOADS
 function load_exploit_HEN(){window.location.replace("payload.html#f=hen.js");}
 function load_exploit_mira2(){window.location.replace("payload.html#f=mira2.js");}
-function load_exploit_miraMais(){window.location.replace("payload.html#f=miraMais.js");}
 function load_exploit_miraMais2(){window.location.replace("payload.html#f=miraMais2.js");}
-function load_exploit_light(){window.location.replace("https://ps4macedo.github.io/702light");}
 function load_dumper(){window.location.replace("payload.html#f=dumper.js");}
 function load_updatesdisable(){window.location.replace("payload.html#f=disableUpd.js");}
-function load_binloader(){window.location.replace("binloader/index.html");}
+function load_binloader(){window.location.replace("binloader.html");}
 function load_ftp(){window.location.replace("payload.html#f=ftp.js");}
 function load_linux1(){window.location.replace("payload.html#f=linux1.js");}
 function load_linux2(){window.location.replace("payload.html#f=linux2.js");}
@@ -297,17 +294,12 @@ function load_fanThreshold(){window.location.replace("payload.html#f=fanThreshol
 function load_kernelDumper(){window.location.replace("payload.html#f=kernelDumper.js");}
 function load_enableBrowser(){window.location.replace("payload.html#f=enableBrowser.js");}
 function load_ce303916fix(){window.location.replace("payload.html#f=ce303916fix.js");}
-function load_henSP5Cdex82(){window.location.replace("payload.html#f=henSP5Cdex82.js");}
 function load_enableVR(){window.location.replace("payload.html#f=vr.js");}
 function load_arabicGuy100(){window.location.replace("payload.html#f=arabicGuy100.js");}
 function load_arabicGuy127(){window.location.replace("payload.html#f=arabicGuy127.js");}
 function load_arabicGuy132(){window.location.replace("payload.html#f=arabicGuy132.js");}
-function b_load_native100(){window.location.replace("payload.html#f=native100.js");}
-function b_load_native127(){window.location.replace("payload.html#f=native127.js");}
-function b_load_native132(){window.location.replace("payload.html#f=native132.js");}
 function load_BeefQueef132(){window.location.replace("payload.html#f=BeefQueef132.js");}
 function load_spoof(){window.location.replace("payload.html#f=spoof.js");}
-function b_load_teste(){window.location.replace("payload.html#f=teste.js");}
 </script>
 </body>
 </html>
