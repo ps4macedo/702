@@ -290,7 +290,7 @@ function stage2() {
       new_thr.fcall(libKernelBase.add32(OFFSET_lk_pthread_exit), 0);
     });
     loader_thr();
-	alert("\n\nP R O N T O ! ! ! Suas cargas utéis já podem ser enviadas. \n\n\n    Obs.: \"RECARREGUE\" a página de Menu antes se sair.");
+	alert("\n\nP R O N T O ! ! ! Suas cargas utéis já podem ser enviadas. \n\n\n    Obs.: Após concluir, pressione o \"OPTION\" e selecione \"Fechar janela\", e\n \"RECARREGUE\" a página de Menu antes se sair.");
   
 } 
 
