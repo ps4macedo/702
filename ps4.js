@@ -120,6 +120,8 @@ function setupRW() {
 	debug_log("-------------------------------------------------------------");
 	debug_log("F  I  M    D  O    W  E  B  K  I  T");
 	debug_log("-------------------------------------------------------------");
+	debug_log(" ");
+	debug_log("Aguardando o payload ser carregado...");
 
 	/* Getting code execution */
 	/* ... */
