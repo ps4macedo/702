@@ -118,7 +118,7 @@ function setupRW() {
 		die("[!] Failed to setup addrof/fakeobj primitives");
 	debug_log("[+] Succesfully got addrof/fakeobj");
 	debug_log("-------------------------------------------------------------");
-	debug_log("F  I  M    D  O    W  E  B  K  I  T");
+	debug_log("FIM DO WEBKIT");
 	debug_log("-------------------------------------------------------------");
 	debug_log(" ");
 	debug_log("Aguardando o payload ser carregado...");
@@ -418,7 +418,9 @@ function prepareUAF() {
 
 /* HTMLElement spray */
 function sprayHTMLTextArea() {
-	debug_log("Please wait for exploit loading...");
+	debug_log("-------------------------------------------------------------");
+	debug_log("INICIADO O WEBKIT");
+	debug_log("-------------------------------------------------------------");
 
 	let textarea_div_elem = document.createElement("div");
 	document.body.appendChild(textarea_div_elem);
