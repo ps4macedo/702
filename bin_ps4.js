@@ -124,11 +124,6 @@ function setupRW() {
 	debug_log("-------------------------------------------------------------");
 	debug_log("F  I  M    D  O    W  E  B  K  I  T");
 	debug_log("-------------------------------------------------------------");
-	debug_log(" ");
-	debug_log(" ");
-	debug_log(" ");
-	debug_log("\n \n P R O N T O ! WebRTE injetado com SUCESSO.\n \n A T E N Ç Ã O ! ! ! Aguarde a(s) mensagen(s).\n  Depois clique em \"OK\" e novamente em \"OK\" na próxima tela (memória insuficiente).");
-
 
 	/* Getting code execution */
 	/* ... */
