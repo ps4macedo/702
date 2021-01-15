@@ -63,7 +63,8 @@ background-color: transparent;
 <br>
 <button id="hen1" class="button" onmouseover="dicas2('hen213')" onMouseOut="fora()"  onclick="load_exploit_HEN(); return false"><font size="4" color="#6089f6">HEN 2.1.3</font></button> 
 <button id="hen2" class="button" onmouseover="dicas2('mira')" onMouseOut="fora()"  onclick="load_exploit_mira2(); return false"><font size="4" color="#ee596f">Mira</font></button>
-<button id="hen3" class="button" onmouseover="dicas2('miraMais2')" onMouseOut="fora()"  onclick="load_exploit_miraMais2(); return false"><font size="4" color="#ee596f">Mira+ v2</font></button> 
+<button id="hen3" class="button" onmouseover="dicas2('miraMais2')" onMouseOut="fora()"  onclick="load_exploit_miraMais2(); return false"><font size="4" color="#ee596f">Mira+ v2</font></button>
+<button id="hen4" class="button" onmouseover="dicas2('702v6')" onMouseOut="fora()"  onclick="load_702v6(); return false"><font size="4"><font size="4" color="#6089f6"> 702 v6 </font></font></button>
 
 <a href="https://github.com/ps4macedo/702/raw/main/apps/ps4macedo.bin" target="_blank" onmouseover="dicas2('light')" onMouseOut="fora()"><button id="hen4" class="button"><font size="4">ESP8266</font></button></a>
 </div>
@@ -146,7 +147,8 @@ case 'botao':document.getElementById("msgs").innerHTML = "Se algum <font color=\
 case 'memoria':document.getElementById("msgs").innerHTML = "Após 5 erros de memória cheia, <font color=\"#ee596f\">saia e entre no navegador</font>.";break;
 case 'demora':document.getElementById("msgs").innerHTML = "Demorando muito para ativar o JB, <font color=\"#ee596f\">deslige totalmente</font> e retire o cabo de força, por 10 min.";break;
 case '6':document.getElementById("msgs").innerHTML = 
-"<h1 style='color:#ee596f;font-size:22px'><font color=\"#49c179\">Host Full (várias opções de exploits e payloads):<br></font><a href=\"https://ps4macedo.github.io/JB/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/JB/</font></a><br><br><font color=\"#49c179\">Hosts (um só exploit e várias opções de payloads):<br></font>HEN 2.1.3: <a href=\"https://ps4macedo.github.io/h213/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/h213/</font></a><br>HEN 2.1.3b: <a href=\"https://ps4macedo.github.io/h213b/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/h213b/</font></a><br><br><font color=\"#49c179\">Hosts Lights (só um exploit e sem playloads):</font><br>HEN 2.1.3: <a href=\"https://ps4macedo.github.io/213/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/213/</font></a><br>HEN 2.1.3b: <a href=\"https://ps4macedo.github.io/213b/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/213b/</font></a><br>HEN 2.2.5: <a href=\"https://ps4macedo.github.io/225/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/225/</font></a><br>HEN 3.0.0: <a href=\"https://ps4macedo.github.io/300/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/300/</font></a></h1>";
+
+"<h1 style='color:#ee596f;font-size:22px'><font color=\"#49c179\">Host Full (várias opções de exploits e payloads):<br></font><a href=\"https://ps4macedo.github.io/JB/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/JB/</font></a><br><a href=\"https://ps4macedo.github.io/702v6/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/702v6/</font></a><br><br><font color=\"#49c179\">Hosts (um só exploit e várias opções de payloads):<br></font>HEN 2.1.3: <a href=\"https://ps4macedo.github.io/h213/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/h213/</font></a><br>HEN 2.1.3b: <a href=\"https://ps4macedo.github.io/h213b/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/h213b/</font></a><br><br><font color=\"#49c179\">Hosts Lights (só um exploit e sem playloads):</font><br>HEN 2.1.3: <a href=\"https://ps4macedo.github.io/213/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/213/</font></a><br>HEN 2.1.3b: <a href=\"https://ps4macedo.github.io/213b/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/213b/</font></a><br>HEN 2.2.5: <a href=\"https://ps4macedo.github.io/225/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/225/</font></a><br>HEN 3.0.0: <a href=\"https://ps4macedo.github.io/300/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/300/</font></a></h1>";
 break;
 default:document.getElementById("msgs").innerHTML = "erro";
 }
@@ -192,6 +194,7 @@ case 'guy100':document.getElementById("msgs").innerHTML = "Ativa o <font style='
 case 'guy127':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V ArabicGuy v1.27</font> (Direcional Direito + Quadrado).";;break;
 case 'guy132':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V ArabicGuy v1.32</font> (Direcional Direito + Quadrado).";;break;
 case 'bee132':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V BeefQuee v1.32</font> (Direcional Direito + Quadrado).";;break;
+case '702v6':document.getElementById("msgs").innerHTML = "<font style='color:#ee596f;'>MISTÉRIO...</font> ainda não consegui entender porque esse versão é mais rápida.";;break;
 case 'teste':document.getElementById("msgs").innerHTML = "Esse botão é para <font color=\"#ee596f\">testes</font> do desenvolvedor do host. Obrigado.";;break;
 
 default:document.getElementById("msgs").innerHTML = "erro";
@@ -295,6 +298,7 @@ function retornando(){
 function load_exploit_HEN(){window.location.replace("payload"+op.value+".html#f=hen.js");}
 function load_exploit_mira2(){window.location.replace("payload"+op.value+".html#f=mira2.js");}
 function load_exploit_miraMais2(){window.location.replace("payload"+op.value+".html#f=miraMais2.js");}
+function load_702v6(){window.location.replace("https://ps4macedo.github.io/702v6");}
 function load_dumper(){window.location.replace("payload"+op.value+".html#f=dumper.js");}
 function load_updatesdisable(){window.location.replace("payload"+op.value+".html#f=disableUpd.js");}
 function load_binloader(){window.location.replace("binloader.html");}
