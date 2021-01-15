@@ -60,12 +60,22 @@ background-color: transparent;
 </h1>
 </div>
 <div class="invisivel">
+<select id="webkit"  style="text-align:center;font-size:18px;height:30px;width:225px;background-color:transparent;color:#ee596f;border:1px solid #404040;"><option value="" selected>com o WebKit Original</option><option value="1">com o WebKit Alterado</option></select>
+<script>
+	var op = document.getElementById('webkit');
+</script>
+
+
+
+
+
+
+<br>
 <button id="hen1" class="button" onmouseover="dicas2('hen213')" onMouseOut="fora()"  onclick="load_exploit_HEN(); return false"><font size="4" color="#6089f6">HEN 2.1.3</font></button> 
 <button id="hen2" class="button" onmouseover="dicas2('mira')" onMouseOut="fora()"  onclick="load_exploit_mira2(); return false"><font size="4" color="#ee596f">Mira</font></button>
 <button id="hen3" class="button" onmouseover="dicas2('miraMais2')" onMouseOut="fora()"  onclick="load_exploit_miraMais2(); return false"><font size="4" color="#ee596f">Mira+ v2</font></button> 
 
 <a href="https://github.com/ps4macedo/702/raw/main/apps/ps4macedo.bin" target="_blank" onmouseover="dicas2('light')" onMouseOut="fora()"><button id="hen4" class="button"><font size="4">ESP8266</font></button></a>
-
 </div>
 <div class="invisivel">
 <h1 id="msgAuto" style='font-size:30px;text-align:center;color:#6089f6;'>Auto HEN 2.1.3 <font color="#ee596f">ATIVADO</font></h1>
@@ -272,37 +282,37 @@ function retornando(){
 }
 
 //COMEÇA AQUI OS PAYLOADS
-function load_exploit_HEN(){window.location.replace("payload.html#f=hen.js");}
-function load_exploit_mira2(){window.location.replace("payload.html#f=mira2.js");}
-function load_exploit_miraMais2(){window.location.replace("payload.html#f=miraMais2.js");}
-function load_dumper(){window.location.replace("payload.html#f=dumper.js");}
-function load_updatesdisable(){window.location.replace("payload.html#f=disableUpd.js");}
+function load_exploit_HEN(){window.location.replace("payload"+op.value+".html#f=hen.js");}
+function load_exploit_mira2(){window.location.replace("payload"+op.value+".html#f=mira2.js");}
+function load_exploit_miraMais2(){window.location.replace("payload"+op.value+".html#f=miraMais2.js");}
+function load_dumper(){window.location.replace("payload"+op.value+".html#f=dumper.js");}
+function load_updatesdisable(){window.location.replace("payload"+op.value+".html#f=disableUpd.js");}
 function load_binloader(){window.location.replace("binloader.html");}
-function load_ftp(){window.location.replace("payload.html#f=ftp.js");}
-function load_linux1(){window.location.replace("payload.html#f=linux1.js");}
-function load_linux2(){window.location.replace("payload.html#f=linux2.js");}
-function load_linux3(){window.location.replace("payload.html#f=linux3.js");}
-function load_app2usb(){window.location.replace("payload.html#f=app2usb.js");}
-function load_kernelClock(){window.location.replace("payload.html#f=kernelClock.js");}
+function load_ftp(){window.location.replace("payload"+op.value+".html#f=ftp.js");}
+function load_linux1(){window.location.replace("payload"+op.value+".html#f=linux1.js");}
+function load_linux2(){window.location.replace("payload"+op.value+".html#f=linux2.js");}
+function load_linux3(){window.location.replace("payload"+op.value+".html#f=linux3.js");}
+function load_app2usb(){window.location.replace("payload"+op.value+".html#f=app2usb.js");}
+function load_kernelClock(){window.location.replace("payload"+op.value+".html#f=kernelClock.js");}
 function load_webrte(){window.location.replace("webrte.html");}
-function load_todex(){window.location.replace("payload.html#f=todex.js");}
-function load_enableUpd(){window.location.replace("payload.html#f=enableUpd.js");}
-function load_disableUpd(){window.location.replace("payload.html#f=disableUpd.js");}
-function load_historyBlocker(){window.location.replace("payload.html#f=historyBlocker.js");}
-function load_dbBackup(){window.location.replace("payload.html#f=dbBackup.js");}
-function load_dbRespore(){window.location.replace("payload.html#f=dbRespore.js");}
-function load_fanThreshold(){window.location.replace("payload.html#f=fanThreshold"+tempC.value+".js");}
-function load_kernelDumper(){window.location.replace("payload.html#f=kernelDumper.js");}
-function load_enableBrowser(){window.location.replace("payload.html#f=enableBrowser.js");}
-function load_ce303916fix(){window.location.replace("payload.html#f=ce303916fix.js");}
-function load_enableVR(){window.location.replace("payload.html#f=vr.js");}
-function load_arabicGuy100(){window.location.replace("payload.html#f=arabicGuy100.js");}
-function load_arabicGuy127(){window.location.replace("payload.html#f=arabicGuy127.js");}
-function load_arabicGuy132(){window.location.replace("payload.html#f=arabicGuy132.js");}
-function load_BeefQueef132(){window.location.replace("payload.html#f=BeefQueef132.js");}
-function load_spoof(){window.location.replace("payload.html#f=spoof.js");}
-function load_teste1(){window.location.replace("payload.html#f=backup.js");}
-function load_teste2(){window.location.replace("payload.html#f=restore.js");}
+function load_todex(){window.location.replace("payload"+op.value+".html#f=todex.js");}
+function load_enableUpd(){window.location.replace("payload"+op.value+".html#f=enableUpd.js");}
+function load_disableUpd(){window.location.replace("payload"+op.value+".html#f=disableUpd.js");}
+function load_historyBlocker(){window.location.replace("payload"+op.value+".html#f=historyBlocker.js");}
+function load_dbBackup(){window.location.replace("payload"+op.value+".html#f=dbBackup.js");}
+function load_dbRespore(){window.location.replace("payload"+op.value+".html#f=dbRespore.js");}
+function load_fanThreshold(){window.location.replace("payload"+op.value+".html#f=fanThreshold"+tempC.value+".js");}
+function load_kernelDumper(){window.location.replace("payload"+op.value+".html#f=kernelDumper.js");}
+function load_enableBrowser(){window.location.replace("payload"+op.value+".html#f=enableBrowser.js");}
+function load_ce303916fix(){window.location.replace("payload"+op.value+".html#f=ce303916fix.js");}
+function load_enableVR(){window.location.replace("payload"+op.value+".html#f=vr.js");}
+function load_arabicGuy100(){window.location.replace("payload"+op.value+".html#f=arabicGuy100.js");}
+function load_arabicGuy127(){window.location.replace("payload"+op.value+".html#f=arabicGuy127.js");}
+function load_arabicGuy132(){window.location.replace("payload"+op.value+".html#f=arabicGuy132.js");}
+function load_BeefQueef132(){window.location.replace("payload"+op.value+".html#f=BeefQueef132.js");}
+function load_spoof(){window.location.replace("payload"+op.value+".html#f=spoof.js");}
+function load_teste1(){window.location.replace("payload"+op.value+".html#f=backup.js");}
+function load_teste2(){window.location.replace("payload"+op.value+".html#f=restore.js");}
 </script>
 </body>
 </html>
