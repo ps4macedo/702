@@ -12,7 +12,6 @@ bin_int64.js
 bin_ps4.js
 bin_rop.js
 bin_userland.js
-bin_utils.js
 binloader.html
 ce303916fix.js
 dbBackup.js
