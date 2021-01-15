@@ -125,7 +125,8 @@ function setupRW() {
 	debug_log("FIM DO WEBKIT");
 	debug_log("---------------------------------------------------------------------");
 	debug_log("");
-	debug_log("ATENÇÃO! Para sair, pressione o botão \"OPTION\" e selecione \"Fechar janela\".");
+	debug_log("A T E N Ç Ã O !");
+	debug_log(" Para sair, pressione o botão \"OPTION\" e selecione \"Fechar janela\".");
 
 	/* Getting code execution */
 	/* ... */
