@@ -1,6 +1,6 @@
 <html manifest="cache.manifest">
 <head>
-<title>JAILBREAK 7.02 v6</title>
+<title>JAILBREAK 7.02 v11</title>
 <style>
 body{
 color: white;
@@ -15,7 +15,7 @@ background-repeat:no-repeat;
   border:none;
 }
 .button{
-  font-family: arial;
+font-family: arial;
   font-size:16px;
   text-transform: uppercase;
   font-weight:700;
@@ -30,6 +30,7 @@ background-repeat:no-repeat;
   box-shadow:0 5px 0 #878787;
 }
 .button:hover{
+font-size:22px;
   background:#242424;
   border:2px solid #ffffff;
   box-shadow:0 5px 0 #cccccc;
@@ -48,63 +49,75 @@ height:25px;
 background-color: transparent;
 }
 </style>
-<body onload="retornando(); pegarCheck(); statusCache(); invisivel();" style="text-align:center">
+<body onload="retornando(); pegarCheck(); statusCache(); invisivel(); pegarWebkit();" style="text-align:center">
 <div class="invisivel">
-<br>
-<h1 style='font-size:27px;text-align:center;'><u><font color="#49c179">JAILBREAK 7.02 versão 6</font></u><br>
+<h1 style='font-size:27px;text-align:center;'><u><font color="#49c179">JAILBREAK 7.02 v11 (WebKit Alterado)</font></u><br>
 <font size="3">Ative ou Desative o <font color="#ee596f"><b>Auto-HEN</b></font> 
-<font color="#ee596f" size="5"><b>aqui</b></font>
+	<font color="#ee596f" size="5"><b>aqui</b></font>
 <input type="checkbox" style="background-color:transparent" id="auto" onclick="check()"/>
 </font>
 </h1>
 </div>
+<select id="webkit"  style="font-size:18px;height:30px;width:228px;background-color:transparent;color:#49c179;border:2px solid #404040;" onMouseOut="fora()" ; onmouseover="dicas2('webkit');" onchange="webkit()";><option value="">Com o WebKit Original</option><option value="1">Com o WebKit Alterado</option></select><script>var op = document.getElementById('webkit');</script>
 <div class="invisivel">
+<br>
 <button id="hen1" class="button" onmouseover="dicas2('hen213')" onMouseOut="fora()"  onclick="load_exploit_HEN(); return false"><font size="4" color="#6089f6">HEN 2.1.3</font></button> 
-<button id="hen2" class="button" onmouseover="dicas2('miraTeste')" onMouseOut="fora()"  onclick="load_exploit_miraTeste(); return false"><font size="4" color="#ee596f">Mira+</font></button> 
-<button id="hen3" class="button" onmouseover="dicas2('mira')" onMouseOut="fora()"  onclick="load_exploit_mira2(); return false"><font size="4" color="#ee596f">Mira</font></button>
-<button id="hen4" class="button" onmouseover="dicas2('light')" onMouseOut="fora()"  onclick="load_exploit_light(); return false"><font size="4">Light</font></button>
+<button id="hen2" class="button" onmouseover="dicas2('mira')" onMouseOut="fora()"  onclick="load_exploit_mira2(); return false"><font size="4" color="#ee596f">Mira</font></button>
+<button id="hen3" class="button" onmouseover="dicas2('miraMais2')" onMouseOut="fora()"  onclick="load_exploit_miraMais2(); return false"><font size="4" color="#ee596f">Mira+ v2</font></button>
+<button id="hen4" class="button" onmouseover="dicas2('702v6')" onMouseOut="fora()"  onclick="load_702v6(); return false"><font size="4"><font size="4" color="#6089f6"> 702 v6 </font></font></button>
+
+<a href="https://github.com/ps4macedo/702/raw/main/apps/ps4macedo.bin" target="_blank" onmouseover="dicas2('light')" onMouseOut="fora()"><button id="hen4" class="button"><font size="4">ESP8266</font></button></a>
 </div>
 <div class="invisivel">
 <h1 id="msgAuto" style='font-size:30px;text-align:center;color:#6089f6;'>Auto HEN 2.1.3 <font color="#ee596f">ATIVADO</font></h1>
 <br>
 </div>
-<hr width="47%" size="1" color="#ff5757">
+<hr width="55%" size="1" color="#ff5757">
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline: <font color=\"#ee596f\">" + Percent + "%</font>";}
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação na Cache Concluída! <font color=\"#ee596f\">Aguarde ...</font></font>";},1000);setTimeout(function(){window.msgs.innerHTML="Agora saia usando o <font color=\"#ee596f\">CIRCULO, desabilite a REDE e RETORNE ao navegador.</font>";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};</script>
 </head>
-<h1 id=msgs style='font-size:25px;text-align:center;color:#6089f6;'>MENU JAILBREAK PS4 <font color="#ee596f">7.02</font> v6</h1>
-<hr width="47%" size="1" color="#ff5757">
+<h1 id=msgs style='font-size:25px;text-align:center;color:#6089f6;'>MENU JAILBREAK PS4 <font color="#ee596f">7.02</font> v11</h1>
+<hr width="55%" size="1" color="#ff5757">
 <div class="invisivel" style="text-align:center">
 <font size="3">Pressione o <font color="#ee596f"><b>CIRCULO PARA SAIR<b></font>.</font>
 <h1 style='font-size:25px;text-align:center;'><u><font color="#49c179">CARGAS ÚTEIS</font></u></h1>
-<button class="button" onmouseover="dicas2('cu2')" onMouseOut="fora()"  onclick="load_ftp(); return false"> FTP </button>
+
+<button class="button" onmouseover="dicas2('binloader')" onMouseOut="fora()"  onclick="load_binloader(); return false">Bin Loader</button>
 <button class="button" onmouseover="dicas2('cu3')" onMouseOut="fora()"  onclick="load_dumper(); return false"> Dumper </button>
-<button class="button" onmouseover="dicas2('linux1')" onMouseOut="fora()"  onclick="load_linux1(); return false"> Linux 1GB</button>
-<button class="button" onmouseover="dicas2('linux2')" onMouseOut="fora()"  onclick="load_linux2(); return false"> Linux 2GB</button>
-<button class="button" onmouseover="dicas2('linux3')" onMouseOut="fora()"  onclick="load_linux3(); return false"> Linux 3GB</button>
 <button class="button" onmouseover="dicas2('cu5')" onMouseOut="fora()"  onclick="load_app2usb(); return false"> App2USB </button>
 <button class="button" onmouseover="dicas2('cu9')" onMouseOut="fora()"  onclick="load_todex(); return false"> ToDEX </button>
-<button class="button" onmouseover="dicas2('kernelClock')" onMouseOut="fora()"  onclick="load_kernelClock(); return false"> Kernel-Clock </button>
-<button class="button" onmouseover="dicas2('cu8')" onMouseOut="fora()"  onclick="load_kernelDumper(); return false"> kernel Dumper </button>
+<button class="button" onmouseover="dicas2('cu2')" onMouseOut="fora()"  onclick="load_ftp(); return false"> FTP </button>
+<button class="button" onmouseover="dicas2('ce303916fix')" onMouseOut="fora()"  onclick="load_ce303916fix(); return false"> ce-303916 fix </button>
+<button class="button" onmouseover="dicas2('spoof')" onMouseOut="fora()"  onclick="load_spoof(); return false"> Spoof </button>
+<button class="button" onmouseover="dicas2('cu20')" onMouseOut="fora()"  onclick="load_enableVR(); return false"> PSVR </button>
 <br><br>
-<button class="button" onmouseover="dicas2('binloader')" onMouseOut="fora()"  onclick="load_binloader(); return false">Bin Loader</button>
-<button class="button" onmouseover="dicas2('cu20')" onMouseOut="fora()"  onclick="load_enableVR(); return false"> Enable VR </button>
-<button class="button" onmouseover="dicas2('webrte')" onMouseOut="fora()"  onclick="load_webrte(); return false"> WebRTE </button>
-<a href="http://ps4trainer.com/Trainer/index.html" target="_blank" onmouseover="dicas2('cu15')" onMouseOut="fora()" ><button class="button"> Trainer </button></a>
-<button class="button" onmouseover="dicas2('cu10')" onMouseOut="fora()"  onclick="load_historyBlocker(); return false"> Hist. Blocker </button>
+
+<button class="button" onmouseover="dicas2('cu8')" onMouseOut="fora()"  onclick="load_kernelDumper(); return false"> kernel Dumper </button>
+<button class="button" onmouseover="dicas2('kernelClock')" onMouseOut="fora()"  onclick="load_kernelClock(); return false"> Kernel Clock </button>
 <button class="button" onmouseover="dicas2('cu11')" onMouseOut="fora()"  onclick="load_disableUpd(); return false"> Disable Upd </button>
 <button class="button" onmouseover="dicas2('cu12')" onMouseOut="fora()"  onclick="load_enableUpd(); return false"> Enable Upd </button>
 <button class="button" onmouseover="dicas2('dbBackup')" onMouseOut="fora()"  onclick="load_dbBackup(); return false"> DB Backup </button>
 <button class="button" onmouseover="dicas2('dbRestore')" onMouseOut="fora()"  onclick="load_dbRestore(); return false"> DB Restore </button>
+
 <br><br>
-<button class="button" onmouseover="dicas2('ce303916fix')" onMouseOut="fora()"  onclick="load_ce303916fix(); return false"> ce-303916fix </button>
-<button class="button" onmouseover="dicas2('gta100')" onMouseOut="fora()"  onclick="load_arabicGuy100(); return false"> GTA 1.00 </button>
-<button class="button" onmouseover="dicas2('gta127')" onMouseOut="fora()"  onclick="load_arabicGuy127(); return false"> GTA 1.27</button>
-<button class="button" onmouseover="dicas2('gta132')" onMouseOut="fora()"  onclick="load_arabicGuy132(); return false"> GTA 1.32</button>
+<button class="button" onmouseover="dicas2('webrte')" onMouseOut="fora()"  onclick="load_webrte(); return false"> WebRTE </button>
+<a href="http://ps4trainer.com/Trainer/index.html" target="_blank" onmouseover="dicas2('cu15')" onMouseOut="fora()" ><button class="button"> Trainer </button></a>
+<button class="button" onmouseover="dicas2('guy100')" onMouseOut="fora()"  onclick="load_arabicGuy100(); return false"> GTA 1.00 GUY </button>
+<button class="button" onmouseover="dicas2('guy127')" onMouseOut="fora()"  onclick="load_arabicGuy127(); return false"> GTA 1.27 GUY </button>
+<button class="button" onmouseover="dicas2('guy132')" onMouseOut="fora()"  onclick="load_arabicGuy132(); return false"> GTA 1.32 GUY</button>
+
+
+<button class="button" onmouseover="dicas2('bee132')" onMouseOut="fora()"  onclick="load_BeefQueef132(); return false"> GTA 1.32 Bee</button>
+<button class="button" onmouseover="dicas2('cu10')" onMouseOut="fora()"  onclick="load_historyBlocker(); return false"> Hist. Blocker </button>
+
+<br><br>
+<button class="button" onmouseover="dicas2('linux1')" onMouseOut="fora()"  onclick="load_linux1(); return false"> Linux 1GB</button>
+<button class="button" onmouseover="dicas2('linux2')" onMouseOut="fora()"  onclick="load_linux2(); return false"> Linux 2GB</button>
+<button class="button" onmouseover="dicas2('linux3')" onMouseOut="fora()"  onclick="load_linux3(); return false"> Linux 3GB</button>
 <button class="button" onmouseover="dicas2('cu17')" onMouseOut="fora()"  onclick="load_enableBrowser(); return false"> Enable Browser </button>
-<button class="button" onmouseover="dicas2('cu18')" onMouseOut="fora()"  onclick="load_henSP5Cdex82(); return false"> henSP5Cdex82 </button>
-<button class="button" onmouseover="dicas2('spoof')" onMouseOut="fora()"  onclick="load_spoof(); return false"> Spoof </button>
+<button class="button" onmouseover="dicas2('teste')" onMouseOut="fora()"  onclick="load_teste1(); return false"> teste 1</button>
+<button class="button" onmouseover="dicas2('teste')" onMouseOut="fora()"  onclick="load_teste2(); return false"> teste 2</button>
 <button class="button"  onmouseover="dicas2('cu16')" onMouseOut="fora()"  onclick="load_fanThreshold(); return false"> <font size=2px>temp. alvo</font></button><select id="tempC"  style="font-size:20px;height:35px;width:60px;background-color:transparent;color:#ee596f;border:2px solid #404040;"></select><font size=5px>&#176;C</font>
 <script>
 for(var i=55; i<=73; i=i+3){
@@ -116,7 +129,7 @@ for(var i=55; i<=73; i=i+3){
 }
 tempC.value=70;
 </script>
-<br><br>
+<br>
 <h1 style='font-size:25px;'><u><font color="#49c179">Dicas/Informações:</font></u>&nbsp
 <button class="button" onclick="clique('cache')" onMouseOut="fora()" ; onmouseover="dicas2('cache');">CACHE</button>
 <button class="button" onclick="clique('usb')" onMouseOut="fora()" ; onmouseover="dicas2('usb');">USB</button>
@@ -134,7 +147,8 @@ case 'botao':document.getElementById("msgs").innerHTML = "Se algum <font color=\
 case 'memoria':document.getElementById("msgs").innerHTML = "Após 5 erros de memória cheia, <font color=\"#ee596f\">saia e entre no navegador</font>.";break;
 case 'demora':document.getElementById("msgs").innerHTML = "Demorando muito para ativar o JB, <font color=\"#ee596f\">deslige totalmente</font> e retire o cabo de força, por 10 min.";break;
 case '6':document.getElementById("msgs").innerHTML = 
-"<h1 style='color:#ee596f;font-size:22px'><font color=\"#49c179\">Host Full (várias opções de exploits e payloads):<br></font><a href=\"https://ps4macedo.github.io/JB/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/JB/</font></a><br><br><font color=\"#49c179\">Hosts (um só exploit e várias opções de payloads):<br></font>HEN 2.1.3: <a href=\"https://ps4macedo.github.io/h213/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/h213/</font></a><br>HEN 2.1.3b: <a href=\"https://ps4macedo.github.io/h213b/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/h213b/</font></a><br><br><font color=\"#49c179\">Hosts Lights (só um exploit e sem playloads):</font><br>HEN 2.1.3: <a href=\"https://ps4macedo.github.io/213/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/213/</font></a><br>HEN 2.1.3b: <a href=\"https://ps4macedo.github.io/213b/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/213b/</font></a><br>HEN 2.2.5: <a href=\"https://ps4macedo.github.io/225/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/225/</font></a><br>HEN 3.0.0: <a href=\"https://ps4macedo.github.io/300/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/300/</font></a></h1>";
+
+"<h1 style='color:#ee596f;font-size:22px'><font color=\"#49c179\">Host Full (várias opções de exploits e payloads):<br></font><a href=\"https://ps4macedo.github.io/JB/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/JB/</font></a><br><a href=\"https://ps4macedo.github.io/702v6/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/702v6/</font></a><br><br><font color=\"#49c179\">Hosts (um só exploit e várias opções de payloads):<br></font>HEN 2.1.3: <a href=\"https://ps4macedo.github.io/h213/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/h213/</font></a><br>HEN 2.1.3b: <a href=\"https://ps4macedo.github.io/h213b/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/h213b/</font></a><br><br><font color=\"#49c179\">Hosts Lights (só um exploit e sem playloads):</font><br>HEN 2.1.3: <a href=\"https://ps4macedo.github.io/213/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/213/</font></a><br>HEN 2.1.3b: <a href=\"https://ps4macedo.github.io/213b/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/213b/</font></a><br>HEN 2.2.5: <a href=\"https://ps4macedo.github.io/225/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/225/</font></a><br>HEN 3.0.0: <a href=\"https://ps4macedo.github.io/300/\/\" target=\"_blank\"> <font color=\"#6089f6\">https://ps4macedo.github.io/300/</font></a></h1>";
 break;
 default:document.getElementById("msgs").innerHTML = "erro";
 }
@@ -147,11 +161,13 @@ case 'botao':document.getElementById("msgs").innerHTML = "Se algum <font color=\
 case 'memoria':document.getElementById("msgs").innerHTML = "Após 5 erros de memória cheia, <font color=\"#ee596f\">saia e entre no navegador</font>.";break;
 case 'demora':document.getElementById("msgs").innerHTML = "Demorando muito para ativar o JB, <font color=\"#ee596f\">deslige totalmente</font> e retire o cabo de força, por 10 min.";break;
 case '6':document.getElementById("msgs").innerHTML = "Clique para ver outros Hosts";break;
+case 'webkit':document.getElementById("msgs").innerHTML = "Selecione o <font style='color:#ee596f;'>WebKit</font> desejado, entre a versão original (sleirsgoevy) e a alterada.";break;
 case 'hen213':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + HEN v2.1.3</font> (sleirsgoevy).";break;
 case 'mira':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + Mira</font> (mais estável).";break;
-case 'light':document.getElementById("msgs").innerHTML = "Link para um Host somente com o HEN, <font style='color:#ee596f;'>sem payload</font>.";break;
-case 'miraTeste':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + Mira + ToDex + Spoof fw8.03 + Fixs </font>(mais estável).";break;
-case 'binloader':document.getElementById("msgs").innerHTML = "Permite enviar arquivos<font style='color:#ee596f;'> .BIN</font> para o PS4 pela porta <font style='color:#ee596f;'>9020</font>.";break;
+case 'light':document.getElementById("msgs").innerHTML = "<font size=\"4\">Link (<font style='color:#ee596f;'>acesse pelo pc</font>) para o DOWNLOAD desse Host para o <font style='color:#ee596f;'>ESP8266</font> (100% OFF).<br> Dados: Rede (<font style='color:#ee596f;'>ps4macedo</font>), senha (<font style='color:#ee596f;'>macedo702</font>), DNS (<font style='color:#ee596f;'>11.11.11.11</font>) e configuração (<font style='color:#ee596f;'>11.11.11.11/settings</font>).</font>";break;
+case 'miraMais':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + Mira + ToDex + Spoof fw8.03 + PSVR + Fixs </font>(mais estável).";break;
+case 'miraMais2':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + Mira + ToDex + Spoof fw8.03 + PSVR + Fixs </font>(versão 2 - mais estável).";break;
+case 'binloader':document.getElementById("msgs").innerHTML = "Permite enviar arquivos<font style='color:#ee596f;'> .BIN</font> para o PS4 pela porta <font style='color:#ee596f;'>9020 </font> (usando PS4 PUNCH).";break;
 case 'cu2':document.getElementById("msgs").innerHTML = "Gerencie os arquivos do PS4 pelo computador <font style='color:#ee596f;'>via protocolo FTP</font> (FileZilla).";break;
 case 'cu3':document.getElementById("msgs").innerHTML = "Permite fazer <font style='color:#ee596f;'>cópia de segurança</font> de seus jogos <font style='color:#ee596f;'>via USB</font>.";break;
 case 'linux1':document.getElementById("msgs").innerHTML = "Carrega o <font style='color:#ee596f;'>Linux via USB</font> (1gb de gráficos)";break;
@@ -159,7 +175,7 @@ case 'linux2':document.getElementById("msgs").innerHTML = "Carrega o <font style
 case 'linux3':document.getElementById("msgs").innerHTML = "Carrega o <font style='color:#ee596f;'>Linux via USB</font> (3gb de gráficos)";break;
 case 'cu5':document.getElementById("msgs").innerHTML = "<font style='color:#ee596f;'>Transfere jogos</font> do console para um hd externo (<font style='color:#ee596f;'>exFAT</font>).";break;
 case 'kernelClock':document.getElementById("msgs").innerHTML = "Corrigi erros decorrente do <font style='color:#ee596f;'>Relógio</font>.";break;
-case 'webrte':document.getElementById("msgs").innerHTML = "Para gerenciamento de trapaças (<font style='color:#ee596f;'>funcioando só pelo binloader</font>).";break;
+case 'webrte':document.getElementById("msgs").innerHTML = "Para gerenciamento de trapaças (<font style='color:#ee596f;'>demora um pouco a ativação</font>).";break;
 case 'cu8':document.getElementById("msgs").innerHTML = "Faz <font style='color:#ee596f;'> beckup do kernel</font> via USB.";break;
 case 'cu15':document.getElementById("msgs").innerHTML = "Link para o site <font style='color:#ee596f;'>ps4trainer.com</font>";break;
 case 'cu9':document.getElementById("msgs").innerHTML = "Modo de depuração do console (<font style='color:#ee596f;'>teste de devkit</font>).";break;
@@ -174,21 +190,26 @@ case 'cu18':document.getElementById("msgs").innerHTML = "em teste.";break;
 case 'spoof':document.getElementById("msgs").innerHTML = "Simula o firmware <font style='color:#ee596f;'>8.03 para o Headset</font>.";break;
 case 'cu20':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>PSVR</font> (ative o HEN 2.1.3 primeiro).";;break;
 case 'ce303916fix':document.getElementById("msgs").innerHTML = "Corrigi efetuais <font style='color:#ee596f;'>erros</font>.";;break;
-case 'gta100':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V ArabicGuy v1.00</font> (Direcional Direito + Quadrado).";;break;
-case 'gta127':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V ArabicGuy v1.27</font> (Direcional Direito + Quadrado).";;break;
-case 'gta132':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V ArabicGuy v1.32</font> (Direcional Direito + Quadrado).";;break;
+case 'guy100':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V ArabicGuy v1.00</font> (Direcional Direito + Quadrado).";;break;
+case 'guy127':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V ArabicGuy v1.27</font> (Direcional Direito + Quadrado).";;break;
+case 'guy132':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V ArabicGuy v1.32</font> (Direcional Direito + Quadrado).";;break;
+case 'bee132':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>MOD GTA V BeefQuee v1.32</font> (Direcional Direito + Quadrado).";;break;
+case '702v6':document.getElementById("msgs").innerHTML = "<font style='color:#ee596f;'>MISTÉRIO...</font> ainda não consegui entender porque esse versão é mais rápida.";;break;
+case 'teste':document.getElementById("msgs").innerHTML = "Esse botão é para <font color=\"#ee596f\">testes</font> do desenvolvedor do host. Obrigado.";;break;
+
 default:document.getElementById("msgs").innerHTML = "erro";
 }
 }
 
 function fora(){
-document.getElementById("msgs").innerHTML = "PS4 MENU JAILBREAK <font style='color:#ee596f;'>7.02</font> v6";
+document.getElementById("msgs").innerHTML = "PS4 MENU JAILBREAK <font style='color:#ee596f;'>7.02</font> v11";
 }
 
 function invisivel() {
   var appCache = window.applicationCache;
   if(appCache.status == appCache.DOWNLOADING){
     var elementos = document.querySelectorAll(".invisivel");	
+	document.getElementById('webkit').style.display = 'none';
 	elementos[0].style.display = 'none';
 	elementos[1].style.display = 'none';
 	elementos[2].style.display = 'none';
@@ -201,7 +222,8 @@ var appCache = window.applicationCache;
 switch (appCache.status) {
   case appCache.UNCACHED:
     document.getElementById("msgs2").innerHTML = "UNCACHED";
-    var elementos = document.querySelectorAll(".invisivel");	
+    var elementos = document.querySelectorAll(".invisivel");
+	document.getElementById('webkit').style.display = 'none';
 	elementos[0].style.display = 'none';
 	elementos[1].style.display = 'none';
 	elementos[2].style.display = 'none';
@@ -241,6 +263,25 @@ document.getElementById('hen4').style.display = 'inline';
 document.getElementById('msgAuto').style.display = 'none';}
 }
 
+
+function webkit() {	
+var webkitSelect = document.getElementById("webkit").value;
+document.getElementById("webkit").value = webkitSelect;
+localStorage.setItem('webkit', webkitSelect);
+}
+
+var webkitSelectStorage = localStorage.getItem("webkit");
+	
+function pegarWebkit(){
+if (webkitSelectStorage == "1"){
+document.getElementById("webkit").value = "1" ; 
+}
+else{
+document.getElementById("webkit").value = "" ;
+}
+}
+
+
 function retornando(){
     var retorno = decodeURIComponent(document.location.hash.substr(3));
 	if (retorno){
@@ -250,40 +291,42 @@ function retornando(){
 		elementos[3].style.display = 'none';
 		var url = window.location.pathname
 		window.history.replaceState(null, null, url);					
-	}else{if (checkStatusStorage == 'true'){load_exploit_HEN(); return false;}}
+	}else{if (checkStatusStorage == 'true'){pegarWebkit();load_exploit_HEN(); return false;}}
 }
 
 //COMEÇA AQUI OS PAYLOADS
-function load_exploit_HEN(){window.location.replace("payload.html#f=hen.js");}
-function load_exploit_mira2(){window.location.replace("payload.html#f=mira2.js");}
-function load_exploit_miraTeste(){window.location.replace("payload.html#f=miraTeste.js");}
-function load_exploit_light(){window.location.replace("https://ps4macedo.github.io/702light");}
-function load_dumper(){window.location.replace("payload.html#f=dumper.js");}
-function load_updatesdisable(){window.location.replace("payload.html#f=disableUpd.js");}
-function load_binloader(){window.location.replace("binloader/index.html");}
-function load_ftp(){window.location.replace("payload.html#f=ftp.js");}
-function load_linux1(){window.location.replace("payload.html#f=linux1.js");}
-function load_linux2(){window.location.replace("payload.html#f=linux2.js");}
-function load_linux3(){window.location.replace("payload.html#f=linux3.js");}
-function load_app2usb(){window.location.replace("payload.html#f=app2usb.js");}
-function load_kernelClock(){window.location.replace("payload.html#f=kernelClock.js");}
-function load_webrte(){window.location.replace("binloader/index.html");}
-function load_todex(){window.location.replace("payload.html#f=todex.js");}
-function load_enableUpd(){window.location.replace("payload.html#f=enableUpd.js");}
-function load_disableUpd(){window.location.replace("payload.html#f=disableUpd.js");}
-function load_historyBlocker(){window.location.replace("payload.html#f=historyBlocker.js");}
-function load_dbBackup(){window.location.replace("payload.html#f=dbBackup.js");}
-function load_dbRespore(){window.location.replace("payload.html#f=dbRespore.js");}
-function load_fanThreshold(){window.location.replace("payload.html#f=fanThreshold"+tempC.value+".js");}
-function load_kernelDumper(){window.location.replace("payload.html#f=kernelDumper.js");}
-function load_enableBrowser(){window.location.replace("payload.html#f=enableBrowser.js");}
-function load_ce303916fix(){window.location.replace("payload.html#f=ce303916fix.js");}
-function load_henSP5Cdex82(){window.location.replace("payload.html#f=henSP5Cdex82.js");}
-function load_enableVR(){window.location.replace("payload.html#f=vr.js");}
-function load_arabicGuy100(){window.location.replace("payload.html#f=arabicGuy100.js");}
-function load_arabicGuy127(){window.location.replace("payload.html#f=arabicGuy127.js");}
-function load_arabicGuy132(){window.location.replace("payload.html#f=arabicGuy132.js");}
-function load_spoof(){window.location.replace("payload.html#f=spoof.js");}
+function load_exploit_HEN(){window.location.replace("payload"+op.value+".html#f=hen.js");}
+function load_exploit_mira2(){window.location.replace("payload"+op.value+".html#f=mira2.js");}
+function load_exploit_miraMais2(){window.location.replace("payload"+op.value+".html#f=miraMais2.js");}
+function load_702v6(){window.location.replace("https://ps4macedo.github.io/702v6");}
+function load_dumper(){window.location.replace("payload"+op.value+".html#f=dumper.js");}
+function load_updatesdisable(){window.location.replace("payload"+op.value+".html#f=disableUpd.js");}
+function load_binloader(){window.location.replace("binloader.html");}
+function load_ftp(){window.location.replace("payload"+op.value+".html#f=ftp.js");}
+function load_linux1(){window.location.replace("payload"+op.value+".html#f=linux1.js");}
+function load_linux2(){window.location.replace("payload"+op.value+".html#f=linux2.js");}
+function load_linux3(){window.location.replace("payload"+op.value+".html#f=linux3.js");}
+function load_app2usb(){window.location.replace("payload"+op.value+".html#f=app2usb.js");}
+function load_kernelClock(){window.location.replace("payload"+op.value+".html#f=kernelClock.js");}
+function load_webrte(){window.location.replace("webrte.html");}
+function load_todex(){window.location.replace("payload"+op.value+".html#f=todex.js");}
+function load_enableUpd(){window.location.replace("payload"+op.value+".html#f=enableUpd.js");}
+function load_disableUpd(){window.location.replace("payload"+op.value+".html#f=disableUpd.js");}
+function load_historyBlocker(){window.location.replace("payload"+op.value+".html#f=historyBlocker.js");}
+function load_dbBackup(){window.location.replace("payload"+op.value+".html#f=dbBackup.js");}
+function load_dbRespore(){window.location.replace("payload"+op.value+".html#f=dbRespore.js");}
+function load_fanThreshold(){window.location.replace("payload"+op.value+".html#f=fanThreshold"+tempC.value+".js");}
+function load_kernelDumper(){window.location.replace("payload"+op.value+".html#f=kernelDumper.js");}
+function load_enableBrowser(){window.location.replace("payload"+op.value+".html#f=enableBrowser.js");}
+function load_ce303916fix(){window.location.replace("payload"+op.value+".html#f=ce303916fix.js");}
+function load_enableVR(){window.location.replace("payload"+op.value+".html#f=vr.js");}
+function load_arabicGuy100(){window.location.replace("payload"+op.value+".html#f=arabicGuy100.js");}
+function load_arabicGuy127(){window.location.replace("payload"+op.value+".html#f=arabicGuy127.js");}
+function load_arabicGuy132(){window.location.replace("payload"+op.value+".html#f=arabicGuy132.js");}
+function load_BeefQueef132(){window.location.replace("payload"+op.value+".html#f=BeefQueef132.js");}
+function load_spoof(){window.location.replace("payload"+op.value+".html#f=spoof.js");}
+function load_teste1(){window.location.replace("payload"+op.value+".html#f=backup.js");}
+function load_teste2(){window.location.replace("payload"+op.value+".html#f=restore.js");}
 </script>
 </body>
 </html>
