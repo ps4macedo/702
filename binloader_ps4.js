@@ -124,7 +124,7 @@ function setupRW() {
 	debug_log("https://github.com/ps4macedo/702/raw/main/apps/ps4punch.rar")
 	debug_log("")
 	debug_log("OBSERVAÇÃO:")
-	debug_log("Para sair, pressione \"OK\" depois \"OPTION\" e selecione \"Fechar janela\".")
+	debug_log("Para \"SAIR\", pressione \"OK\" depois \"OPTION\" e selecione \"Fechar janela\".")
 
 	/* Getting code execution */
 	/* ... */
