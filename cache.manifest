@@ -8,11 +8,8 @@ arabicGuy132.js
 backup.js
 BeefQueef132.js
 bg1.png
-bin_int64.js
-bin_ps4.js
-bin_rop.js
-bin_userland.js
 binloader.html
+binloader_ps4.js
 ce303916fix.js
 dbBackup.js
 dbRestore.js
@@ -29,14 +26,15 @@ fanThreshold70.js
 fanThreshold73.js
 ftp.js
 hen.js
-hen213b.js
 hen213b.html
+hen213b.js
 historyBlocker.js
 index.html
 int64.js
 jb_c-code.js
 kernelClock.js
 kernelDumper.js
+lamance132.js
 linux1.js
 linux2.js
 linux3.js
@@ -45,6 +43,7 @@ mira_c-code.js
 mira_v2.js
 mira2.js
 miraMais2.js
+nomes.txt
 payload.html
 payload1.html
 ps4.js
@@ -56,4 +55,7 @@ utils.js
 vr.js
 webrte.html
 webrte.js
+webrte_int64.js
+webrte_ps4.js
+webrte_rop.js
 webrte_userland.js
