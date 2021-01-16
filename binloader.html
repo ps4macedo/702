@@ -8,10 +8,6 @@ body{text-align:center;overflow:hidden;color: #6089f6; background-color:#000000;
 </style>
 <body onload="go()"><br>
 <script>
-if(document.cookie.indexOf('kex=0') >= 0)
-    document.location.replace("index.html#retorno=true");
-</script>
-<script>
 function print(){}
 
 var scriptCode = '';
@@ -40,21 +36,16 @@ function done()
 
 window.midExploit = function()
 {
-    if(document.location.hash)
-    {
-        var s = decodeURIComponent(document.location.hash.substr(3));
-        preloadScripts(['702.js', 'jb_c-code.js', 'mira.js','mira_c-code.js'], go);
-    }
-    else
-        preloadScripts(['702.js', 'jb_c-code.js', 'mira.js', 'mira_c-code.js'], go);
+    preloadScripts(['702.js', 'jb_c-code.js', 'mira.js','mira_c-code.js'], go);
 }
 
 window.postExploit = function()
 {
     document.cookie = 'kex=0';
-    setTimeout(function(){
+    setTimeout(function() //update the screen one last time...
+    {
         eval.call(window, scriptCode);
-		done();
+        done();
     }, 100);
 };
 </script>
