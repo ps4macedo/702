@@ -116,8 +116,10 @@ function setupRW() {
 		die("[!] Failed to setup addrof/fakeobj primitives");
 	debug_log("[+] Succesfully got addrof/fakeobj");
 	debug_log("------------------------------------------------------");
-	debug_log("FIM DO WEBKIT...");
+	debug_log("FIM DO WEBKIT");
 	debug_log("------------------------------------------------------");
+	debug_log("");
+	debug_log("Aguarde o payload carregar.");
 
 	/* Getting code execution */
 	/* ... */
