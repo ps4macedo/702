@@ -116,13 +116,15 @@ function setupRW() {
 	debug_log("");
 	debug_log("P R O N T O ! ! ! Sua carga útel já pode ser enviada.")
 	debug_log("")
-	debug_log("A T E N Ç Ã O !!! O computador deve estar na mesma rede do PS4.")
-	debug_log("Utilize o ip do console e a porta 9021.")
+	debug_log("A T E N Ç Ã O !!!")
+	debug_log("O computador deve estar na mesma rede do PS4 (online).")
+	debug_log("Utilize o ip do seu console e a porta 9021.")
 	debug_log("")
 	debug_log("Endereço do aplicativo para enviar as cargas úteis:")
 	debug_log("https://github.com/ps4macedo/702/raw/main/apps/ps4punch.rar")
 	debug_log("")
-	debug_log(" Obs.: Para sair, pressione \"OK\" depois \"OPTION\" e selecione \"Fechar janela\".")
+	debug_log("OBSERVAÇÃO:")
+	debug_log("Para sair, pressione \"OK\" depois \"OPTION\" e selecione \"Fechar janela\".")
 
 	/* Getting code execution */
 	/* ... */
