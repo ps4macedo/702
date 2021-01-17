@@ -123,7 +123,7 @@ function setupRW() {
 	debug_log("ATENÇÃO PARA NÃO PERDER A CACHE OFFLINE!!!");
 	debug_log("Para \"SAIR\", pressione o botão \"OPTION\", selecione \"Fechar janela\",");
 	debug_log("\"OK\" na mensagem de memória insuficente, selecione a \"JANELA PRINCIPAL\".");
-	debug_log("e, por fim, saia do nevegador usando o \"CÍRCULO\".");
+	debug_log("e, por fim, saia do navegador usando o \"CÍRCULO\".");
 
 	/* Getting code execution */
 	/* ... */
