@@ -120,7 +120,7 @@ function setupRW() {
 	debug_log("P R O N T O ! ! !");
 	debug_log("Aguarde a ativação da carga útil.");
 	debug_log("");
-	debug_log("ATENÇÃO PARA NÃO PERDER A CACHE OFFLINE!!!");
+	debug_log("<font style='color:#ee596f;'>ATENÇÃO PARA NÃO PERDER A CACHE OFFLINE!!!</font>");
 	debug_log("Para \"SAIR\", pressione o botão \"OPTION\", selecione \"Fechar janela\",");
 	debug_log("\"OK\" na mensagem de memória insuficente, selecione a \"JANELA PRINCIPAL\".");
 	debug_log("e, por fim, saia do nevegador usando o \"CÍRCULO\".");
