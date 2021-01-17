@@ -118,7 +118,7 @@ function setupRW() {
 	debug_log("---------------------------------------------------------------------");
 	debug_log("");
 	debug_log("P R O N T O ! ! !");
-	debug_log("");
+	debug_log("Aguarde a ativação da carga útil.");
 	debug_log("");
 	debug_log("A T E N Ç Ã O !");
 	debug_log("Para \"SAIR\", pressione o botão \"OPTION\" e selecione \"Fechar janela\".");
