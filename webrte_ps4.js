@@ -122,7 +122,8 @@ function setupRW() {
 	debug_log("");
 	debug_log("A T E N Ç Ã O !");
 	debug_log("Para \"SAIR\", pressione o botão \"OPTION\", selecione \"Fechar janela\",");
-	debug_log("\"OK\" na mensagem de memória insuficente e selecione a \"JANELA PRINCIPAL\".");
+	debug_log("\"OK\" na mensagem de memória insuficente, selecione a \"JANELA PRINCIPAL\".");
+	debug_log("e, por fim, saia do nevegador um usando o \"CÍRCULO\".");
 
 	/* Getting code execution */
 	/* ... */
