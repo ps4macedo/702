@@ -17,13 +17,7 @@ disableUpd.js
 dumper.js
 enableBrowser.js
 enableUpd.js
-fanThreshold55.js
-fanThreshold58.js
-fanThreshold61.js
-fanThreshold64.js
-fanThreshold67.js
-fanThreshold70.js
-fanThreshold73.js
+fanThreshold.js
 ftp.js
 hen.js
 hen213b.html

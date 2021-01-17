@@ -1,6 +1,6 @@
 <html manifest="cache.manifest">
 <head>
-<title>PS4MACEDO 7.02 v12</title>
+<title>PS4MACEDO 7.02 v13</title>
 <style>
 body{
 color: white;
@@ -51,7 +51,7 @@ background-color: transparent;
 </style>
 <body onload="retornando(); pegarCheck(); statusCache(); invisivel(); pegarWebkit();" style="text-align:center">
 <div class="invisivel">
-<h1 style='font-size:27px;text-align:center;'><u><font color="#49c179">PS4MACEDO 7.02 v12</font></u><br>
+<h1 style='font-size:27px;text-align:center;'><u><font color="#49c179">PS4MACEDO 7.02 v13</font></u><br>
 <font size="3">Ative ou Desative o <font color="#ee596f"><b>Auto-HEN</b></font> 
 	<font color="#ee596f" size="5"><b>aqui</b></font>
 <input type="checkbox" style="background-color:transparent" id="auto" onclick="check()"/>
@@ -78,7 +78,7 @@ background-color: transparent;
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline: <font color=\"#ee596f\">" + Percent + "%</font>";}
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação na Cache Concluída! <font color=\"#ee596f\">Aguarde ...</font></font>";},1000);setTimeout(function(){window.msgs.innerHTML="Agora saia usando o <font color=\"#ee596f\">CIRCULO, desabilite a REDE e RETORNE ao navegador.</font>";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};</script>
 </head>
-<h1 id=msgs style='font-size:25px;text-align:center;color:#6089f6;'>MENU JAILBREAK PS4 <font color="#ee596f">7.02</font> v12</h1>
+<h1 id=msgs style='font-size:25px;text-align:center;color:#6089f6;'>MENU JAILBREAK PS4 <font color="#ee596f">7.02</font> v13</h1>
 <hr width="55%" size="1" color="#ff5757">
 <div class="invisivel" style="text-align:center">
 <font size="3">Pressione o <font color="#ee596f"><b>CIRCULO PARA SAIR<b></font>.</font>
@@ -120,7 +120,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<fo
 <button class="button" onmouseover="dicas2('teste')" onMouseOut="fora()"  onclick="load_teste2(); return false"> teste 2</button>
 <button class="button"  onmouseover="dicas2('cu16')" onMouseOut="fora()"  onclick="load_fanThreshold(); return false"> <font size=2px>temp. alvo</font></button><select id="tempC"  style="font-size:20px;height:35px;width:60px;background-color:transparent;color:#ee596f;border:2px solid #404040;"></select><font size=5px>&#176;C</font>
 <script>
-for(var i=55; i<=73; i=i+3){
+for(var i=45; i<=85; i=i+1){
     var select = document.getElementById("tempC");
     var option = document.createElement("OPTION");
 	select.options.add(option);
@@ -203,7 +203,7 @@ default:document.getElementById("msgs").innerHTML = "erro";
 }
 
 function fora(){
-document.getElementById("msgs").innerHTML = "PS4 MENU JAILBREAK <font style='color:#ee596f;'>7.02</font> v12";
+document.getElementById("msgs").innerHTML = "PS4 MENU JAILBREAK <font style='color:#ee596f;'>7.02</font> v13";
 }
 
 function invisivel() {
@@ -317,7 +317,7 @@ function load_disableUpd(){window.location.replace("payload"+op.value+".html#f=d
 function load_historyBlocker(){window.location.replace("payload"+op.value+".html#f=historyBlocker.js");}
 function load_dbBackup(){window.location.replace("payload"+op.value+".html#f=dbBackup.js");}
 function load_dbRespore(){window.location.replace("payload"+op.value+".html#f=dbRespore.js");}
-function load_fanThreshold(){window.location.replace("payload"+op.value+".html#f=fanThreshold"+tempC.value+".js");}
+function load_fanThreshold(){localStorage.setItem("fancontrol", tempC.value);window.location.replace("payload"+op.value+".html#f=fanThreshold.js");}
 function load_kernelDumper(){window.location.replace("payload"+op.value+".html#f=kernelDumper.js");}
 function load_enableBrowser(){window.location.replace("payload"+op.value+".html#f=enableBrowser.js");}
 function load_ce303916fix(){window.location.replace("payload"+op.value+".html#f=ce303916fix.js");}
