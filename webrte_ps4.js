@@ -466,6 +466,7 @@ function prepareUAF() {
 
 /* HTMLElement spray */
 function sprayHTMLTextArea() {
+	debug_log("");
 	debug_log("---------------------------------------------------------------------");
 	debug_log("INICIANDO O WEBKIT...");
 	debug_log("---------------------------------------------------------------------");
